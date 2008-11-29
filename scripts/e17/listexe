@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for file in `ls all_ci/*.eap`
+do
+	test=`enlightenment_eapp $file -get-exe`
+	echo $test
+done

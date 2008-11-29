@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=IPSorcery
+Exec=magic
+StartupNotify=false
+X-Enlightenment-WaitExit=false
+Icon=/usr/share/genmenu/pixmaps/gnome-squeak.png
+Type=Application

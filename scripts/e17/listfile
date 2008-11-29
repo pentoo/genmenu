@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for file in `ls all_ci/*.eap`
+do
+	test=`enlightenment_eapp $file -get-exe | grep need`
+	if [ "$test" = "" ];
+	then
+		toto=1
+	else
+		echo $file
+	fi
+done

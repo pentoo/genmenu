@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nmap
+GenericName=Nmap Scanner
+Exec=nmapfe
+StartupNotify=false
+X-Enlightenment-WaitExit=false
+StartupWMClass=Nmapfe
+Icon=/usr/share/genmenu/pixmaps/nmap-logo-64.png
+Type=Application

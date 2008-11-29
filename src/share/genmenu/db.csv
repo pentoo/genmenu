@@ -1,0 +1,148 @@
+app-forensics/cmospwd,cracker,cmospwd
+app-fuzz/Peach,fuzzers,peach
+app-fuzz/bed,fuzzers,bed
+app-fuzz/bss,fuzzers,bss
+app-fuzz/fusil,fuzzers Fusil,fusil-apache fusil-firefox fusil-gstreamer fusil-libc-printf fusil-ogg123 fusil-poppler fusil-clamav fusil-gettext fusil-imagemagick fusil-mplayer fusil-php fusil-python
+app-fuzz/fuzzer-server,fuzzers,fuzzer-server
+app-fuzz/http-fuzz,fuzzers,httpfuzz
+app-fuzz/protos,fuzzers,protos
+app-fuzz/scapy,fuzzers,scapy
+app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
+app-fuzz/smudge,fuzzers,smudge
+app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
+app-fuzz/ohrwurm,fuzzers,ohrwurm
+app-fuzz/scapy,fuzzers,scapy
+app-crypt/plaintoo,cracker,plaintoo.desktop
+app-crypt/SIPcrack,cracker,sipcrack
+app-crypt/SIPcrack,sip-voip,sipdump
+app-crypt/chntpw,cracker,chntpw
+app-crypt/md5bf,cracker,md5bf
+app-crypt/johntheripper,cracker,john,
+dev-db/absinthe,database,absinthe,
+dev-db/mssqlscan,database MSSQL,mssqlscan,
+dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
+dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
+dev-db/sqlbf,database,sqlbf
+dev-db/sqlinject,database,sqlinject
+dev-util/insight,rce,insight,
+dev-java/jad-bin,rce,/opt/bin/jad,
+net-analyzer/aimsniff,analyzer,aimsniff
+net-analyzer/amap,footprint fingerprint Services,amap
+net-analyzer/angst,analyzer,angst
+net-analyzer/arpwatch,analyzer,arpwatch
+net-analyzer/authforce,cracker,authforce
+net-analyzer/autoscan-network,scanner,autoscan.desktop
+net-analyzer/bmon,analyzer,bmon
+net-analyzer/cheops-ng,scanner,cheops-ng.desktop
+net-analyzer/dnsa,analyzer,dnsa
+net-analyzer/dnsenum,analyzer,dnsenum
+net-analyzer/driftnet,analyzer,driftnet.desktop
+net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
+net-analyzer/ettercap,mitm,ettercap,-G
+net-analyzer/fierce,footprint DNS,fierce.pl
+net-analyzer/firewalk,scanner,firewalk
+net-analyzer/fragroute,forging,fragroute
+net-analyzer/ftester,analyzer,ftest
+net-analyzer/geoedge,footprint Geolocation,geoedge.py,
+net-analyzer/gnome-nettool,analyzer,gnome-nettool.desktop
+net-analyzer/gspoof,forging,gspoof,-g
+net-analyzer/honeyd,misc,honeyd
+net-analyzer/hping,forging,hping2 hping3
+net-analyzer/hunt,scanner,hunt
+net-analyzer/hydra,cracker,hydra.desktop
+net-analyzer/inguma,exploit,inguma
+net-analyzer/ike-scan,scanner,ike-scan
+net-analyzer/isic,forging,isic
+net-analyzer/macchanger,misc,macchanger
+net-analyzer/mbrowse,analyzer,mbrowse,
+net-analyzer/medusa,analyzer,medusa
+net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
+net-analyzer/metagoofil,footprint Web,metagoofil.py
+net-analyzer/metasploit,exploit,msf-console.desktop msf-web.desktop
+net-analyzer/mosref,exploit,mosref mosref-src.desktop,
+net-analyzer/nbtscan,scanner,nbtscan
+net-analyzer/nessus,scanner,nessus.desktop
+net-analyzer/netdude,analyzer,netdude.desktop
+net-analyzer/netwag,forging,netwag.desktop
+net-analyzer/nikto,scanner,nikto
+net-analyzer/nmap,scanner,nmap.desktop
+net-analyzer/nmbscan,scanner,nmbscan
+net-analyzer/ntop,analyzer,ntop.desktop
+net-analyzer/ntp-fingerprint,footprint fingerprint Services,ntp-fingerprint
+net-analyzer/onesixtyone,scanner,onesixtyone
+net-analyzer/p0f,footprint fingerprint OS,p0f
+net-analyzer/packit,forging,packit,
+net-analyzer/paketto,analyzer,lc minewt paratrace
+net-analyzer/paketto,scanner,scanrand
+net-analyzer/rain,forging,rain,--help
+net-analyzer/sara,scanner,sara.desktop
+net-analyzer/scanssh,footprint fingerprint Services,scanssh
+net-analyzer/siphon,footprint fingerprint OS,siphon
+net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py
+net-analyzer/smtpmap,footprint fingerprint Services,smtpmap
+net-analyzer/sniffit,analyzer,sniffit
+net-analyzer/snmpenum,analyzer,snmpenum
+net-analyzer/snort,misc,snort
+net-analyzer/subdomainer,footprint DNS,subdomainer.py,
+net-analyzer/tcptraceroute,analyzer,tcptraceroute
+net-analyzer/thcrut,analyzer,thcrut
+net-analyzer/theHarvester,footprint Mail,theHarvester.py
+net-analyzer/upnpscan,scanner,upnpscan
+net-analyzer/voiphopper,sip-voip,voiphopper
+net-analyzer/w3af,exploit,w3af
+net-analyzer/wfuzz,footprint Http,wfuzz
+net-analyzer/xprobe,footprint fingerprint OS,xprobe
+net-analyzer/yersinia,exploit,yersinia.desktop
+net-analyzer/zodiac,analyzer,zodiac.desktop
+net-firewall/firehol,misc,firehol.desktop
+net-firewall/fwbuilder,misc,fwbuilder.desktop
+net-ftp/ftpd,misc,ftpd.desktop
+net-ftp/oftpd,misc,oftpd
+net-irc/irssi,misc,irssi
+net-irc/xchat,misc,xchat.desktop
+net-misc/bridge-utils,mitm,brctl
+net-misc/curl,misc,curl
+net-misc/dhcpcd,misc,dhcpcd
+net-misc/etherwake,misc,etherwake.desktop
+net-misc/ipsorcery,forging,ipsorcery.desktop
+net-misc/minisip,sip-voip,minisip.desktop
+net-misc/nemesis,forging,nemesis
+net-misc/partysip,sip-voip,partysip
+net-misc/proxychains,proxy,proxychains
+net-misc/raccess,exploit,raccess
+net-misc/rdesktop,misc,rdesktop
+net-misc/sipbomber,sip-voip,sipbomber
+net-misc/sipp,sip-voip,sipp
+net-misc/siproxd,sip-voip,siproxd
+net-misc/sipsak,sip-voip,sipsak
+net-misc/socat,analyzer,socat
+net-misc/stunnel,misc,stunnel
+net-misc/tightvnc,misc,vncviewer
+net-misc/tinc,misc,tinc.desktop
+net-misc/tsclient,misc,tsclient.desktop
+net-misc/voipong,sip-voip,voipong
+net-nds/gq,analyzer,gq.desktop
+net-nds/lat,analyzer,lat.desktop
+net-proxy/3proxy,proxy,3proxy
+net-proxy/httpush,proxy,httpush
+net-proxy/paros,proxy,paros.desktop
+net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
+net-proxy/webscarab,proxy,webscarab.desktop
+net-wireless/aircrack-ng,wireless,aircrack-ng airdecap-ng aireplay-ng airodump-ng
+net-wireless/airsnort,wireless,airsnort.desktop
+net-wireless/airtraf,wireless,airtraf
+net-wireless/btscanner,bluetooth,btscanner.desktop
+net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
+net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
+net-wireless/kismet,wireless,kismet.desktop kismetauto.desktop
+net-wireless/mdk,wireless,mdk
+net-wireless/ska,wireless,ska
+net-wireless/wavemon,wireless,wavemon.desktop
+net-wireless/waveselect,wireless,waveselect
+net-wireless/wepattack,wireless,wepattack
+net-wireless/wepdecrypt,wireless,wepdecrypt
+net-wireless/wifiscanner,wireless,wifiscanner
+net-wireless/wifitap,wireless,wifitap
+net-wireless/wpa_supplicant,wireless,wpa_supplicant
+net-www/apache,misc,apache.desktop
+sys-devel/gdb,rce,gdb

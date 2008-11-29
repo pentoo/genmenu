@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=X-Chat
+GenericName=IRC
+Exec=xchat-2
+StartupNotify=true
+X-Enlightenment-WaitExit=false
+StartupWMClass=Xchat
+Icon=/usr/share/pixmaps/xchat.png
+Type=Application

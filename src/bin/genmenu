@@ -1,0 +1,14 @@
+
+# EAP_LIBDIR="/usr/lib/genmenu/e17/"
+
+# Finds installed packages and remove version number
+APPLIST=`find /var/db/pkg/n* -mindepth 1 -type d | sed -e 's/-[0-9].*//g' -e 's:/var/db/pkg/::g'`
+
+for app in $APPLIST
+do
+#	FNAME=`grep "${app}" db | sed -e 's/.*\t//g'`
+	FNAME=`grep "${app}" db | sed -e 's:'$app'\t::g' | grep -e '^[a-z]*.eap'`
+	if [ ! -z "${FNAME}" ]; then
+		echo $app $FNAME
+	fi
+done

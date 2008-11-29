@@ -1,0 +1,7 @@
+for file in `cat files_uses_term`
+do
+	cmd=`enlightenment_eapp $file -get-exe | grep gnome-terminal`
+	newcmd=`echo $cmd | sed -e 's/gnome-terminal/\$E17TERM/g' -e 's/ -[ex]/ -e/g'`
+	echo $newcmd
+	enlightenment_eapp $file -set-exe "$newcmd"
+done

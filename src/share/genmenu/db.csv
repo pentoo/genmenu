@@ -78,7 +78,7 @@ net-analyzer/rain,forging,rain,--help
 net-analyzer/sara,scanner,sara.desktop
 net-analyzer/scanssh,footprint fingerprint Services,scanssh
 net-analyzer/siphon,footprint fingerprint OS,siphon
-net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py
+net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py svlearnfp.py
 net-analyzer/smtpmap,footprint fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum

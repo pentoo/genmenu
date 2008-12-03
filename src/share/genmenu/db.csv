@@ -5,13 +5,13 @@ app-fuzz/bss,fuzzers,bss
 app-fuzz/fusil,fuzzers Fusil,fusil-apache fusil-firefox fusil-gstreamer fusil-libc-printf fusil-ogg123 fusil-poppler fusil-clamav fusil-gettext fusil-imagemagick fusil-mplayer fusil-php fusil-python
 app-fuzz/fuzzer-server,fuzzers,fuzzer-server
 app-fuzz/http-fuzz,fuzzers,httpfuzz
+app-fuzz/ohrwurm,fuzzers,ohrwurm
 app-fuzz/protos,fuzzers,protos
 app-fuzz/scapy,fuzzers,scapy
 app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
-app-fuzz/ohrwurm,fuzzers,ohrwurm
-app-fuzz/scapy,fuzzers,scapy
+app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump

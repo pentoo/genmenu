@@ -21,10 +21,13 @@ app-crypt/johntheripper,cracker,john,
 dev-db/absinthe,database,absinthe,
 dev-db/mssqlscan,database MSSQL,mssqlscan,
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
+dev-db/sqid,database,sqid
 dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
 dev-db/sqlinject,database,sqlinject
 dev-db/sqlix,database,sqlix
+dev-db/sqlmap,database,sqlmap
+dev-db/sqlninja,database,sqlninja
 dev-util/insight,rce,insight,
 dev-java/jad-bin,rce,/opt/bin/jad,
 net-analyzer/aimsniff,analyzer,aimsniff

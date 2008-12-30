@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Oracle SysExec
-Exec=$P2TERM -e /opt/pentoo/scripts/oat ose
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/cqure.png
-Type=Application

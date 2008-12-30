@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=BT Scanner
-Exec=$P2TERM -e launch btscanner
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/stock_bluetooth.png
-Type=Application

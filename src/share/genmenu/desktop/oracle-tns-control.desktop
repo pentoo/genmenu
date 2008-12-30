@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Oracle TNS Control
-Exec=$P2TERM -e /opt/pentoo/scripts/oat otnsctl
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/cqure.png
-Type=Application

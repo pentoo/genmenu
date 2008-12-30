@@ -102,8 +102,8 @@ net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop
 net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd
-net-irc/irssi,misc,irssi
-net-irc/xchat,misc,xchat.desktop
+net-irc/irssi,none,irssi
+net-irc/xchat,none,xchat.desktop
 net-misc/bridge-utils,mitm,brctl
 net-misc/curl,misc,curl
 net-misc/dhcpcd,misc,dhcpcd
@@ -135,7 +135,7 @@ net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/aircrack-ng,wireless,aircrack-ng airdecap-ng aireplay-ng airodump-ng
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
-net-wireless/btscanner,bluetooth,btscanner.desktop
+net-wireless/btscanner,bluetooth,btscanner
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
 net-wireless/kismet,wireless,kismet.desktop kismetauto.desktop

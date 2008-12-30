@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=Firehol
-Exec=$P2TERM -e launch /etc/init.d/firehol start
+Exec=P2TERM -e launch /etc/init.d/firehol start
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=/usr/share/genmenu/pixmaps/network-config.png
 Type=Application
+Categories=Application;Network;

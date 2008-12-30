@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Oracle Scanner
-Exec=$P2TERM -e launch oscanner
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/cqure.png
-Type=Application

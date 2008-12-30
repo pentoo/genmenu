@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Oracle Sam Dump
-Exec=$P2TERM -e /opt/pentoo/scripts/ost osd
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/cqure.png
-Type=Application

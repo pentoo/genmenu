@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=MiniSIP
-Exec=$P2TERM -e minisip
+Exec=P2TERM -e minisip
 Icon=/usr/share/genmenu/pixmaps/tray_icon.png
 Type=Application

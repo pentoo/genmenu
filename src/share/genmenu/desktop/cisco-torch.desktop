@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Cisco-Torch
-Exec=$P2TERM -e /opt/pentoo/scripts/cisco-torch.sh
+Exec=P2TERM -e /opt/pentoo/scripts/cisco-torch.sh
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=/usr/share/genmenu/pixmaps/cisco.png

@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=MSF Console
-Exec=$P2TERM -e msfconsole
+Exec=P2TERM -e msfconsole
 Icon=/usr/share/genmenu/pixmaps/metasploit.png
 Type=Application

@@ -3,7 +3,6 @@
 # This code in distributed under GPLv2
 # Copyright Michael Zanetta grimmlin@pentoo.ch
 #
-#
 # WARNING !!! UGLY CODE AHEAD !!!
 #
 
@@ -18,8 +17,6 @@ from StringIO import StringIO
 db = []
 
 PORTDIR="/var/db/pkg/"
-#PORTDIR = 'V:/Linux/portage/db'
-# Move to applications
 BASEDIR = '/usr/share/genmenu/'
 APPSDIR = '/usr/share/genmenu/desktop'
 MENUDIR = '/usr/share/genmenu/directory'
@@ -257,24 +254,25 @@ def create_desktop_entry(name, category, binname, params, genname):
 def make_menu_entry(root_menu, iconfiles, category, params, genname):
     root_category = category.split(" ")[0]
     # TODO
-    # This adds/search the root category for correct submenus creatinos 
-    for submenus in category.split(" "):
-        # Add the same here for the "all" subentry
-        if submenus == root_category:
-            base_menu = find_menu_entry(root_menu, root_category)
-            if base_menu == None:
-                base_menu = add_menu_entry(root_menu, root_category, root_category)
-            menu = base_menu
-        else:
-            if options.vverbose:
-                print submenus
-                #print etree.tostring(root_menu, pretty_print=True)
-                #print etree.tostring(menu, pretty_print=True)
-     
-            menu = find_menu_entry(base_menu, submenus)
-            if menu == None:
-                menu = add_menu_entry(base_menu, root_category, submenus)
-            base_menu = menu
+    # This adds/search the root category for correct submenus creatinos
+    if not category == 'none':
+        for submenus in category.split(" "):
+            # Add the same here for the "all" subentry
+            if submenus == root_category:
+                base_menu = find_menu_entry(root_menu, root_category)
+                if base_menu == None:
+                    base_menu = add_menu_entry(root_menu, root_category, root_category)
+                menu = base_menu
+            else:
+                if options.vverbose:
+                    print submenus
+                    #print etree.tostring(root_menu, pretty_print=True)
+                    #print etree.tostring(menu, pretty_print=True)
+         
+                menu = find_menu_entry(base_menu, submenus)
+                if menu == None:
+                    menu = add_menu_entry(base_menu, root_category, submenus)
+                base_menu = menu
     # Only adds the entry under specific category
     #print etree.tostring(menu, pretty_print=True)
     for iconfile in iconfiles.split(" "):
@@ -296,6 +294,7 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
                 # Copy the file
                     try:
                         shutil.copyfile(file, ICONDIR + iconfile)
+                        os.system("sed -i -e 's/P2TERM/" + options.p2term + "/' " + ICONDIR + iconfile)
                     except:
                         sys.stderr.write("Unable to copy " + iconfile + " to " + ICONDIR + "\n")
                         sys.stderr.write("Verify that you have write permissions in " + ICONDIR + "\n")
@@ -303,7 +302,8 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
             else:
                 sys.stderr.write("File " + file + "does not exists \n")
                 return -1
-        append_desktop_entry(menu, iconfile)
+        if not category == 'none':
+            append_desktop_entry(menu, iconfile)
         if options.vverbose:
             print etree.tostring(root_menu, pretty_print=True)
             print iconfile + " " + category

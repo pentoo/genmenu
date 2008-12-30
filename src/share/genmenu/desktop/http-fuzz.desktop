@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=HTTP-Fuzz
-Exec=$P2TERM -e launch http-fuzz -h
+Exec=P2TERM -e launch http-fuzz -h
 Icon=/usr/share/genmenu/pixmaps/gnome-terminal.png
 Type=Application

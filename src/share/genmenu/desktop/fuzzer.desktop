@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Fuzzer
-Exec=$P2TERM -e launch fuzzer -h
+Exec=P2TERM -e launch fuzzer -h
 Icon=/usr/share/genmenu/pixmaps/gnome-terminal.png
 Type=Application

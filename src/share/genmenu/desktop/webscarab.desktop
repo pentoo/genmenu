@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=WebScarab
-Exec=$P2TERM -e /usr/bin/webscarab
+Exec=P2TERM -e /usr/bin/webscarab
 Icon=/usr/share/genmenu/pixmaps/webscarab.png
 Type=Application

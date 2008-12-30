@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=BT_Audit
-Exec=$P2TERM -e /opt/pentoo/scripts/bt_audit.sh
+Exec=P2TERM -e /opt/pentoo/scripts/bt_audit.sh
 Icon=/usr/share/genmenu/pixmaps/stock_bluetooth.png
 Type=Application

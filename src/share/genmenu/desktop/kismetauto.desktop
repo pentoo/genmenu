@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Kismet
 GenericName=curses, autoconfigured
-Exec=$P2TERM -e /opt/pentoo/scripts/kismetauto.sh
+Exec=P2TERM -e /opt/pentoo/scripts/kismetauto.sh
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=/usr/share/genmenu/pixmaps/kismet.png

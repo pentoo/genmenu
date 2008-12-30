@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Burp Suite
-Exec=$P2TERM -e burpsuite
+Exec=P2TERM -e burpsuite
 Icon=/usr/share/genmenu/pixmaps/web-browser.png
 Type=Application

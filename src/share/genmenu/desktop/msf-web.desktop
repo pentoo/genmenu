@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=MSF Web
-Exec=$P2TERM -e /opt/pentoo/scripts/msfweb.sh
+Exec=P2TERM -e /opt/pentoo/scripts/msfweb.sh
 Icon=/usr/share/genmenu/pixmaps/metasploit.png
 Type=Application

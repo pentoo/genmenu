@@ -10,3 +10,4 @@ GenericName=URxvt
 Name=URxvt
 Terminal=false
 Icon=/usr/share/genmenu/pixmaps/term.png
+Categories=GTK;Utility;Terminal;

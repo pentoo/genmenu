@@ -1,0 +1,12 @@
+[Desktop Entry]
+Hidden=false
+NoDisplay=false
+Exec=urxvt
+Type=Application
+Version=1.0
+StartupNotify=false
+StartupWMClass=URxvt
+GenericName=URxvt
+Name=URxvt
+Terminal=false
+Icon=/usr/share/genmenu/pixmaps/term.png

@@ -150,3 +150,4 @@ net-wireless/wifitap,wireless,wifitap
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
 sys-devel/gdb,rce,gdb
+x11-terms/rxvt-unicode,none,urxvt.desktop

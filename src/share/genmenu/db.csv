@@ -67,7 +67,7 @@ net-analyzer/mosref,exploit,mosref mosref-src.desktop,
 net-analyzer/nbtscan,scanner,nbtscan
 net-analyzer/nessus,scanner,nessus.desktop
 net-analyzer/netdude,analyzer,netdude.desktop
-net-analyzer/netwag,forging,netwag.desktop
+net-analyzer/netwag,forging,netwag,
 net-analyzer/nikto,scanner,nikto
 net-analyzer/nmap,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner,nmbscan
@@ -96,7 +96,7 @@ net-analyzer/voiphopper,sip-voip,voiphopper
 net-analyzer/w3af,exploit,w3af
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/xprobe,footprint fingerprint OS,xprobe
-net-analyzer/yersinia,exploit,yersinia.desktop
+net-analyzer/yersinia,exploit,yersinia,-g
 net-analyzer/zodiac,analyzer,zodiac.desktop
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop
@@ -138,7 +138,7 @@ net-wireless/airtraf,wireless,airtraf
 net-wireless/btscanner,bluetooth,btscanner
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
-net-wireless/kismet,wireless,kismet.desktop kismetauto.desktop
+net-wireless/kismet,wireless,kismet.desktop
 net-wireless/mdk,wireless,mdk
 net-wireless/ska,wireless,ska
 net-wireless/wavemon,wireless,wavemon.desktop

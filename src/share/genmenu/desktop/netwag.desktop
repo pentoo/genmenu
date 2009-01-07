@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=NetWag
-Exec=P2TERM -e netwag
-Icon=/usr/share/genmenu/pixmaps/netwag.png
-Type=Application

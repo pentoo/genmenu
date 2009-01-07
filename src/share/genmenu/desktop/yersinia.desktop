@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Yersinia
-GenericName=Curses
-Exec=P2TERM -e /opt/pentoo/scripts/yersinia-gui.sh
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/yersinia.png
-Type=Application

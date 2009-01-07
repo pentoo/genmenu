@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Privoxy - TOR
-Exec=P2TERM -e /opt/pentoo/scripts/privoxy.sh
-Icon=/usr/share/genmenu/pixmaps/gnome-fs-bookmark-missing.png
+Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/privoxy-tor
+Icon=/usr/share/genmenu/pixmaps/proxy.png
 Type=Application

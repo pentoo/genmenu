@@ -1,0 +1,4 @@
+#!/bin/sh
+echo " Use 'airmon-ng start iface' where iface is your wifi interface"
+echo " You can determine it by running iwconfig"
+airmon-ng

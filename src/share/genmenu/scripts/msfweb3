@@ -1,0 +1,8 @@
+#!/bin/sh
+/etc/init.d/msfweb3 start
+echo "   The msf web server will be stopped once you exit firefox"
+echo "   Waiting for daemon to start. If you see an error message"
+echo "   in firefox, wait a little and then refresh"
+sleep 8
+firefox http://127.0.0.1:55555/
+/etc/init.d/msfweb3 stop

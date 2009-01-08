@@ -1,0 +1,12 @@
+#!/bin/sh
+echo " username :	admin"
+echo " password :	pentoo"
+echo " Use Ctrl-c to shutdown ntop (be patient)"
+sleep 4
+launchff(){
+	sleep 10
+	firefox http://127.0.0.1:3000/
+}
+
+launchff &
+ntop

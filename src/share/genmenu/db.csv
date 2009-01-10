@@ -19,15 +19,16 @@ app-crypt/chntpw,cracker,chntpw
 app-crypt/md5bf,cracker,md5bf
 app-crypt/johntheripper,cracker,john,
 dev-db/absinthe,database,absinthe,
+dev-db/minimysqlator,database MySQL,minimysqlator,
 dev-db/mssqlscan,database MSSQL,mssqlscan,
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
-dev-db/sqid,database,sqid
+dev-db/sqid,database,sqid.rb
 dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
 dev-db/sqlinject,database,sqlinject
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
-dev-db/sqlninja,database,sqlninja
+dev-db/sqlninja,database MSSQL,sqlninja
 dev-util/insight,rce,insight,
 dev-java/jad-bin,rce,/opt/bin/jad,
 net-analyzer/aimsniff,analyzer,aimsniff
@@ -94,6 +95,7 @@ net-analyzer/theHarvester,footprint Mail,theHarvester.py
 net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/voiphopper,sip-voip,voiphopper
 net-analyzer/w3af,exploit,w3af
+net-analyzer/webshag,scanner Http,webshag,
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/xprobe,footprint fingerprint OS,xprobe
 net-analyzer/yersinia,exploit,yersinia,-g
@@ -150,4 +152,5 @@ net-wireless/wifitap,wireless,wifitap
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
 sys-devel/gdb,rce,gdb
+x11-terms/xterm,none,xterm.desktop
 x11-terms/rxvt-unicode,none,urxvt.desktop

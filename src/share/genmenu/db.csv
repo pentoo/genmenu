@@ -94,7 +94,7 @@ net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
 net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/voiphopper,sip-voip,voiphopper
-net-analyzer/w3af,exploit,w3af
+net-analyzer/w3af,exploit,w3af_gui w3af_console,
 net-analyzer/webshag,scanner Http,webshag,
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/xprobe,footprint fingerprint OS,xprobe

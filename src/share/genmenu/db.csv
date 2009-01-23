@@ -1,3 +1,4 @@
+app-forensics/autopsy,rce-for,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
@@ -29,8 +30,8 @@ dev-db/sqlinject,database,sqlinject
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
-dev-util/insight,rce,insight,
-dev-java/jad-bin,rce,/opt/bin/jad,
+dev-util/insight,rce-for,insight,
+dev-java/jad-bin,rce-for,/opt/bin/jad,
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
@@ -151,6 +152,6 @@ net-wireless/wifiscanner,wireless,wifiscanner
 net-wireless/wifitap,wireless,wifitap
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
-sys-devel/gdb,rce,gdb
+sys-devel/gdb,rce-for,gdb
 x11-terms/xterm,none,xterm.desktop
 x11-terms/rxvt-unicode,none,urxvt.desktop

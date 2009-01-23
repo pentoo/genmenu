@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Ntop
-Exec=P2TERM -e sh /usr/share/genmenu/ntop
+Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/ntop
 Icon=/usr/share/genmenu/pixmaps/Ntop.png
 Type=Application

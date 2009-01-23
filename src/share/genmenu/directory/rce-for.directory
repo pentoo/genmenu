@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Name=Reversing
+Name=RCE & Forensics
 Exec=
 Type=Directory
 Encoding=UTF-8
@@ -8,4 +8,4 @@ Terminal=false
 GenericName=
 Version=1.0
 X-GNOME-DocPath=
-Icon=/usr/share/genmenu/pixmaps/rce.png
+Icon=/usr/share/genmenu/pixmaps/rce-for.png

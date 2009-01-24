@@ -1,7 +1,7 @@
 app-forensics/autopsy,rce-for,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
-app-forensics/galleta,rce-for,galleta,
-app-forensics/pasco,rce-for,pasco,
+app-forensics/galleta,rce-for,galleta
+app-forensics/pasco,rce-for,pasco
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
@@ -72,7 +72,7 @@ net-analyzer/nbtscan,scanner windows,nbtscan
 net-analyzer/nessus,scanner,nessus.desktop
 net-analyzer/netdude,analyzer,netdude.desktop
 net-analyzer/netwag,forging,netwag,
-net-analyzer/nikto,scanner http,nikto
+net-analyzer/nikto,scanner Http,nikto
 net-analyzer/nmap,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner windows,nmbscan
 net-analyzer/ntop,analyzer,ntop.desktop
@@ -138,7 +138,7 @@ net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
 net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/athload,wireless,athenable athload madwifi-unload
-net-wireless/aircrack-ng,wireless aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
+net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
 net-wireless/btscanner,bluetooth,btscanner

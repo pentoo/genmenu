@@ -1,6 +1,5 @@
 [Desktop Entry]
 Name=Nmap
-GenericName=Nmap Scanner
 Exec=nmapfe
 StartupNotify=false
 X-Enlightenment-WaitExit=false

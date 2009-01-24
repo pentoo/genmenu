@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Autopsy
+Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/autopsy
+Icon=/usr/share/genmenu/pixmaps/rce-for.png
+Type=Application

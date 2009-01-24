@@ -1,0 +1,8 @@
+#!/bin/sh
+launchff(){
+	sleep 10
+	firefox http://127.0.0.1:9999/autopsy
+}
+
+launchff &
+autopsy

@@ -3,6 +3,6 @@
 /etc/init.d/privoxy start
 echo " Please setup your browser to point to 127.0.0.1:8118"
 echo " Use Ctrl-C to exit & shutdown tor/privoxy"
-tail -f /var/log/tor.log
+tail -f /var/log/tor/tor.log
 /etc/init.d/tor stop
 /etc/init.d/privoxy stop

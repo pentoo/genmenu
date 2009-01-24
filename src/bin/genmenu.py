@@ -46,7 +46,7 @@ class directoryfile:
     def getDirectoryFile(self):
         return self.Header, self.Name, self.Comment, self.Icon, self.Type
 
-    def writeDesktopFile(self, dest):
+    def writeDirectoryFile(self, dest):
         try:
             file = open(dest , "w")
         except:
@@ -204,7 +204,8 @@ def add_menu_entry(root_menu, root_category, category):
         new_menu_entry = etree.SubElement(root_menu, "Menu")
         new_name_entry = etree.SubElement(new_menu_entry, "Name")
         new_name_entry.text = category
-        file = os.path.join(LOCALDIR, category + ".directory")
+        directory_entry_file = category + ".directory"
+        file = os.path.join(LOCALDIR, directory_entry_file)
         if not options.simulate:
             if not os.path.exists(LOCALDIR):
                 try:
@@ -214,18 +215,20 @@ def add_menu_entry(root_menu, root_category, category):
                     sys.stderr.write("Verify that you have write permissions in " + LOCALDIR + "\n")
                     return -1
             try:
-                if os.path.exists(os.path.join(MENUDIR, category + ".directory")):
-                    shutil.copyfile(os.path.join(MENUDIR, category + ".directory"), file)
+                if os.path.exists(os.path.join(MENUDIR, directory_entry_file)):
+                    shutil.copyfile(os.path.join(MENUDIR, directory_entry_file), file)
                 else:
                     # We try to make it by hand
                     nme = create_menu_entry(category, root_category)
-                    nme.writeDesktopFile(file)
+                    directory_entry_file = root_category + "-" + category + ".directory"
+                    file = os.path.join(LOCALDIR, directory_entry_file) 
+                    nme.writeDirectoryFile(file)
             except:
-                sys.stderr.write("Unable to copy " + category + ".directory" + " to " + LOCALDIR + "\n")
+                sys.stderr.write("Unable to copy " + directory_entry_file + " to " + LOCALDIR + "\n")
                 sys.stderr.write("Verify that you have write permissions in " + LOCALDIR + "\n")
                 return -1
         new_directory_entry = etree.SubElement(new_menu_entry, "Directory")
-        new_directory_entry.text = category + ".directory"
+        new_directory_entry.text = directory_entry_file
         new_includelist = etree.SubElement(new_menu_entry, "Include")
         return new_menu_entry
 
@@ -254,7 +257,7 @@ def create_desktop_entry(name, category, binname, params, genname):
 def make_menu_entry(root_menu, iconfiles, category, params, genname):
     root_category = category.split(" ")[0]
     # TODO
-    # This adds/search the root category for correct submenus creatinos
+    # This adds/search the root category for correct submenus creations
     if not category == 'none':
         for submenus in category.split(" "):
             # Add the same here for the "all" subentry
@@ -266,15 +269,12 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
             else:
                 if options.vverbose:
                     print submenus
-                    #print etree.tostring(root_menu, pretty_print=True)
-                    #print etree.tostring(menu, pretty_print=True)
          
                 menu = find_menu_entry(base_menu, submenus)
                 if menu == None:
                     menu = add_menu_entry(base_menu, root_category, submenus)
                 base_menu = menu
     # Only adds the entry under specific category
-    #print etree.tostring(menu, pretty_print=True)
     for iconfile in iconfiles.split(" "):
         if not os.path.exists(ICONDIR):
             os.makedirs(ICONDIR)

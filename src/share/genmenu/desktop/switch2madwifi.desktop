@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Kismet
+GenericName=curses
+Exec=P2TERM -e launch athload madwifi
+StartupNotify=false
+X-Enlightenment-WaitExit=false
+Icon=/usr/share/genmenu/pixmaps/wireless.png
+Type=Application

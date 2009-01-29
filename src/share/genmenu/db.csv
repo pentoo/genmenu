@@ -146,7 +146,7 @@ net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/hostapd,wireless,hostapd
-net-wireless/mdk,wireless,mdk3
+net-wireless/mdk,wireless,mdk3,
 net-wireless/ska,wireless,ska
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect

@@ -29,6 +29,7 @@ dev-db/sqid,database,sqid.rb
 dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
 dev-db/sqlinject,database,sqlinject
+dev-db/sqlibf,database,sqlibf,
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
@@ -136,6 +137,7 @@ net-proxy/3proxy,proxy,3proxy
 net-proxy/httpush,proxy,httpush
 net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
+net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui,
 net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,

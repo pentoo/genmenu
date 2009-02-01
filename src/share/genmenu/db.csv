@@ -16,6 +16,7 @@ app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
+app-crypt/pyrit,cracker,pyrit-cuda.py pyrit-stream.py pyrit-padlock.py,
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw

@@ -16,7 +16,7 @@ app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
-app-crypt/pyrit,cracker,pyrit.py pyrit-cuda.py pyrit-stream.py pyrit-padlock.py,
+app-crypt/pyrit,cracker,pyrit,
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw
@@ -50,6 +50,7 @@ net-analyzer/dnsenum,analyzer,dnsenum
 net-analyzer/driftnet,analyzer,driftnet.desktop
 net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
 net-analyzer/ettercap,mitm,ettercap,-G
+net-analyzer/fasttrack,exploit,fasttrack.desktop fasttrack-gui.desktop
 net-analyzer/fierce,footprint DNS,fierce.pl
 net-analyzer/firewalk,scanner,firewalk
 net-analyzer/fragroute,forging,fragroute
@@ -94,6 +95,8 @@ net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum
 net-analyzer/snort,misc,snort
+net-analyzer/sslstrip,mitm,sslstrip
+net-analyzer/sslsniff,mitm,sslsniff
 net-analyzer/subdomainer,footprint DNS,subdomainer.py,
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
 net-analyzer/thcrut,analyzer,thcrut
@@ -148,12 +151,15 @@ net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
 net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
+net-wireless/cowpatty,wireless,cowpatty
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
 net-wireless/kismet,wireless,kismet.desktop
+net-wireless/kismet-newcore,wireless,kismet.desktop
 net-wireless/hostapd,wireless,hostapd
 net-wireless/mdk,wireless,mdk3,
 net-wireless/ska,wireless,ska
+net-wireless/spectools,wireless,spectool_curses spectool_gtk spectool_net
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect
 net-wireless/wepattack,wireless,wepattack

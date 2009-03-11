@@ -5,7 +5,7 @@ app-forensics/pasco,rce-for,pasco
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
-app-fuzz/fusil,fuzzers Fusil,fusil-apache fusil-firefox fusil-gstreamer fusil-libc-printf fusil-ogg123 fusil-poppler fusil-clamav fusil-gettext fusil-imagemagick fusil-mplayer fusil-php fusil-python
+app-fuzz/fusil,fuzzers Fusil,fusil-firefox fusil-clamav fusil-imagemagick fusil-gettext fusil-mplayer fusil-zzuf fusil-ogg123 fusil-python fusil-php fusil-vlc fusil-libc-printf fusil-wizzard fusil-poppler fusil-gstreamer 
 app-fuzz/fuzzer-server,fuzzers,fuzzer-server
 app-fuzz/http-fuzz,fuzzers,httpfuzz
 app-fuzz/ohrwurm,fuzzers,ohrwurm

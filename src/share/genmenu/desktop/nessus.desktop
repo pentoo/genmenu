@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Nessus
-Exec=P2TERM -e /opt/pentoo/scripts/nessus.sh
+Exec=nessus
 Icon=/usr/share/genmenu/pixmaps/nessus-client.png
 Type=Application

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Yersinia
-GenericName=cli
-Exec=P2TERM -e launch yersinia -h
+GenericName=gui
+Exec=yersinia -G
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=/usr/share/genmenu/pixmaps/exploit.png

@@ -119,7 +119,6 @@ def getHomeDir():
 HOME = getHomeDir()
 ICONDIR = HOME + '/.local/share/applications/'
 LOCALDIR = HOME + '/.local/share/desktop-directories/'
-CONFIGDIR = HOME + '/.config/menus/'
 
 def readcsv():
     '''Reads the db from the csv file'''
@@ -309,7 +308,7 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
             print iconfile + " " + category
 
 
-def genxml(root_menu):
+def genxml(root_menu, configdir):
     '''Generate the applications.menu XMl file in the user's directory.'''
     dtd = etree.DTD(os.path.join(BASEDIR, "lib", "menu-1.0.dtd"))
     if dtd.validate(root_menu) == 0:
@@ -319,9 +318,9 @@ def genxml(root_menu):
         #menu = etree.parse(root_menu)
         print etree.tostring(root_menu, pretty_print=True)
     if not options.simulate:
-        if not os.path.exists(CONFIGDIR):
-            os.makedirs(CONFIGDIR)
-        root_menu.write(CONFIGDIR + '/applications.menu')
+        if not os.path.exists(configdir):
+            os.makedirs(configdir)
+        root_menu.write(configdir + '/applications.menu')
 
 def main():
     '''
@@ -352,10 +351,14 @@ def main():
         print star + "Listing supported packages installed"
         print "Package\t\tIcon file\t\tMenu category"
 
+    if options.extramenu:
+        menu = etree.parse(os.path.join(BASEDIR, "lib", "pentoo.menu"))
+    else:
+        menu = etree.parse(os.path.join(BASEDIR, "lib", "applications.menu"))
+
     pkginstalled = []
     pkginstalled = listpackages(PORTDIR)
     notthere = []
-    menu = etree.parse(os.path.join(BASEDIR, "lib", "applications.menu"))
     below = "Pentoo"
     root_menu = find_menu_entry(menu.getroot(),below)
     
@@ -390,8 +393,11 @@ def main():
             print arrow + notthere[i]
     #print etree.tostring(root_menu, pretty_print=True)
     if not options.simulate:
-        # settermenv()
-        genxml(menu)
+
+        if options.extramenu:
+            genxml(menu, HOME + '/.e/e/extra_menu/')
+        else:
+            genxml(menu, HOME + '/.config/menus/')
 
 if __name__ == "__main__":
 
@@ -403,6 +409,8 @@ if __name__ == "__main__":
                       help="Testing module during dev")
     parser.add_option("-a", "--add", action="store_true", dest="addcsventry", default=False,
                       help="Test xml")
+    parser.add_option("-e", "--extramenu", action="store_true", dest="extramenu", default=False,
+                      help="Put the pentoo menu at top")
     parser.add_option("-v", "--verbose", action="store_true", dest="verbose", default=False,
                       help="Show what's going on")
     parser.add_option("-V", "--very-verbose", action="store_true", dest="vverbose", default=False,

@@ -15,6 +15,7 @@ app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
+app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
 app-crypt/plaintoo,cracker,plaintoo.desktop
 app-crypt/pyrit,cracker,pyrit,
 app-crypt/SIPcrack,cracker,sipcrack

@@ -15,9 +15,9 @@ app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
-app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
 app-crypt/plaintoo,cracker,plaintoo.desktop
 app-crypt/pyrit,cracker,pyrit,
+app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw
@@ -25,7 +25,7 @@ app-crypt/md5bf,cracker,md5bf
 app-crypt/johntheripper,cracker,john,
 app-crypt/ophcrack,cracker,ophcrack,
 dev-db/absinthe,database,absinthe,
-dev-db/minimysqlator,database MySQL,minimysqlator,
+dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan,
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
 dev-db/sqid,database,sqid.rb
@@ -151,6 +151,7 @@ net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng ai
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
 net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
+net-wireless/bluemaho,bluetooth,bluemaho.desktop
 net-wireless/btscanner,bluetooth,btscanner
 net-wireless/cowpatty,wireless,cowpatty
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop

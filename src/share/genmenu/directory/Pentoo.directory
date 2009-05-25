@@ -1,6 +1,6 @@
 [Desktop Entry]
-Icon=/usr/share/pixmaps/gedit-plugin-manager.png
+Icon=/usr/share/genmenu/pixmaps/pentoo.png
 Type=Directory
 Name=Pentoo
 Encoding=UTF-8
-
+X-Enlightenment-Menu=main/0

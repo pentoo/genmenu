@@ -396,6 +396,23 @@ def main():
 
         if options.extramenu:
             genxml(menu, HOME + '/.e/e/extra_menu/')
+            directory_entry_file="Pentoo.directory"
+            file = os.path.join(LOCALDIR, directory_entry_file)
+            if not options.simulate:
+                if not os.path.exists(LOCALDIR):
+                    try:
+                        os.makedirs(LOCALDIR)
+                    except:
+                        sys.stderr.write("Unable to create " + LOCALDIR + "\n")
+                        sys.stderr.write("Verify that you have write permissions in " + LOCALDIR + "\n")
+                        return -1
+                try:
+                    if os.path.exists(os.path.join(MENUDIR, directory_entry_file)):
+                        shutil.copyfile(os.path.join(MENUDIR, directory_entry_file), file)
+                except:
+                    sys.stderr.write("Unable to copy " + directory_entry_file + " to " + LOCALDIR + "\n")
+                    sys.stderr.write("Verify that you have write permissions in " + LOCALDIR + "\n")
+                    return -1
         else:
             genxml(menu, HOME + '/.config/menus/')
 

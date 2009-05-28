@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Ophcrack
+GenericName=
+Exec=ophcrack
+Icon=/usr/share/genmenu/pixmaps/cracker.png
+Type=Application

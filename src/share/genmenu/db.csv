@@ -23,7 +23,7 @@ app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw
 app-crypt/md5bf,cracker,md5bf
 app-crypt/johntheripper,cracker,john,
-app-crypt/ophcrack,cracker,ophcrack,
+app-crypt/ophcrack,cracker,ophcrack.desktop
 dev-db/absinthe,database,absinthe,
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan,
@@ -104,10 +104,10 @@ net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
 net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/voiphopper,sip-voip,voiphopper
-net-analyzer/w3af,exploit,w3af_gui w3af_console,
-net-analyzer/webshag,scanner Http,webshag,
+net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console,
+net-analyzer/webshag,scanner Http,webshag.desktop
 net-analyzer/wfuzz,footprint Http,wfuzz
-net-analyzer/xprobe,footprint Fingerprint OS,xprobe
+net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
 net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
 net-analyzer/zodiac,analyzer,zodiac.desktop
 net-firewall/firehol,misc,firehol.desktop
@@ -140,11 +140,11 @@ net-misc/voipong,sip-voip,voipong
 net-nds/gq,analyzer,gq.desktop
 net-nds/lat,analyzer,lat.desktop
 net-proxy/3proxy,proxy,3proxy
-net-proxy/burpsuite,proxy,burpsuite
+net-proxy/burpsuite,proxy,burpsuite.desktop
 net-proxy/httpush,proxy,httpush
 net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
-net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui,
+net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop,
 net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,

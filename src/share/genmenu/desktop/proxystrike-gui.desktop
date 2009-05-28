@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Proxystrike-gui
+GenericName=
+Exec=proxystrike-gui 
+Icon=/usr/share/genmenu/pixmaps/proxy.png
+Type=Application

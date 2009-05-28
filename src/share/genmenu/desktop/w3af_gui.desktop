@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=Fasttrack Gui
-Exec=P2TERM -e launch ftgui
+Name=W3af_gui
+GenericName=
+Exec=w3af_gui 
 Icon=/usr/share/genmenu/pixmaps/exploit.png
 Type=Application

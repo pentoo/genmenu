@@ -18,6 +18,7 @@ app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
 app-crypt/pyrit,cracker,pyrit,
 app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
+app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt,
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw
@@ -36,6 +37,8 @@ dev-db/sqlibf,database,sqlibf,
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
+dev-util/edb,rce-for,edb.desktop
+dev-util/radare,rce-for,gradare.desktop
 dev-util/insight,rce-for,insight,
 dev-java/jad-bin,rce-for,/opt/bin/jad,
 net-analyzer/aimsniff,analyzer,aimsniff

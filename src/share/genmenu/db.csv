@@ -106,6 +106,7 @@ net-analyzer/tcptraceroute,analyzer,tcptraceroute
 net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
 net-analyzer/upnpscan,scanner,upnpscan
+net-analyzer/videojak,sip-voip,videojak
 net-analyzer/voiphopper,sip-voip,voiphopper
 net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console,
 net-analyzer/webshag,scanner Http,webshag.desktop
@@ -124,6 +125,7 @@ net-misc/curl,misc,curl
 net-misc/dhcpcd,misc,dhcpcd
 net-misc/etherwake,misc,etherwake.desktop
 net-misc/ipsorcery,forging,ipsorcery.desktop
+net-misc/iodine,misc,iodine,
 net-misc/minisip,sip-voip,minisip.desktop
 net-misc/nemesis,forging,nemesis
 net-misc/partysip,sip-voip,partysip
@@ -158,8 +160,10 @@ net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/bluemaho,bluetooth,bluemaho.desktop
 net-wireless/btscanner,bluetooth,btscanner
 net-wireless/cowpatty,wireless,cowpatty
+net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
+net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/kismet-newcore,wireless,kismet.desktop
 net-wireless/hostapd,wireless,hostapd

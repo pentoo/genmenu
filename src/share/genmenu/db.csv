@@ -90,6 +90,7 @@ net-analyzer/p0f,footprint Fingerprint OS,p0f
 net-analyzer/packit,forging,packit,
 net-analyzer/paketto,analyzer,lc minewt paratrace
 net-analyzer/paketto,scanner,scanrand
+net-analyzer/ppscan,scanner,ppscan
 net-analyzer/rain,forging,rain,--help
 net-analyzer/sara,scanner,sara.desktop
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
@@ -109,6 +110,7 @@ net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/videojak,sip-voip,videojak
 net-analyzer/voiphopper,sip-voip,voiphopper
 net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console,
+net-analyzer/wapiti,scanner Http,wapiti
 net-analyzer/webshag,scanner Http,webshag.desktop
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
@@ -116,6 +118,7 @@ net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
 net-analyzer/zodiac,analyzer,zodiac.desktop
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop
+net-fs/winexe,exploit,winexe
 net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd
 net-irc/irssi,none,irssi

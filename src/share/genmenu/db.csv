@@ -17,6 +17,7 @@ app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
 app-crypt/pyrit,cracker,pyrit,
+app-crypt/rcracki_mt,cracker,rcracki_mt,
 app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
 app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt,
 app-crypt/SIPcrack,cracker,sipcrack
@@ -157,6 +158,7 @@ net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,
 net-wireless/airoscript,wireless,airoscript,
+net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
 net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan

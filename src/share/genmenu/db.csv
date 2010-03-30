@@ -1,7 +1,13 @@
 app-forensics/autopsy,rce-for,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
 app-forensics/galleta,rce-for,galleta
+app-forensics/make-pdf,rce-for,make-pdf
+app-forensics/memdump,rce-for,memdump
+app-forensics/origami,rce-for,origami
 app-forensics/pasco,rce-for,pasco
+app-forensics/pdfid,rce-for,pdfid
+app-forensics/pdf-parser,rce-for,pdf-parser
+app-forensics/rdd,rce-for,rdd
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
@@ -26,6 +32,7 @@ app-crypt/chntpw,cracker,chntpw
 app-crypt/md5bf,cracker,md5bf
 app-crypt/johntheripper,cracker,john,
 app-crypt/ophcrack,cracker,ophcrack.desktop
+app-crypt/xor-analyze,rce-for,xor-enc xor-analyze
 dev-db/absinthe,database,absinthe,
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan,
@@ -183,6 +190,9 @@ net-wireless/wifiscanner,wireless,wifiscanner
 net-wireless/wifitap,wireless,wifitap
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
+sys-apps/dcfldd,rce-for,dcfldd
 sys-devel/gdb,rce-for,gdb
+sys-fs/dd-rescue,rce-for,dd_rescue
+sys-fs/ddrescue,rce-for,ddrescue
 x11-terms/xterm,none,xterm.desktop
 x11-terms/rxvt-unicode,none,urxvt.desktop

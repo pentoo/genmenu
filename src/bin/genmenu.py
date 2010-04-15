@@ -322,6 +322,60 @@ def genxml(root_menu, configdir):
             os.makedirs(configdir)
         root_menu.write(configdir + '/applications.menu')
 
+def preparexfce(configdir):
+    '''Copy xfce menu file to configdir and chop off the last </Menu>'''
+    if os.path.isfile(BASEDIR + 'lib/xfce-applications.menu'):
+        xfcemenufile = open(BASEDIR + "lib/xfce-applications.menu", "r") 
+    elif os.path.isfile("/etc/xdg/menus/xfce-applications.menu"):
+        xfcemenufile = open("/etc/xdg/menus/xfce-applications.menu", "r") 
+    else:
+        print "Unable to find XFCE menu file. Exiting"
+        sys.exit()
+    xfcemenu = xfcemenufile.read()
+    xfcemenufile.close()
+    menuindex = xfcemenu.rfind("</Menu>")
+    if menuindex == -1:
+        print "Failure parsing pentoo xfce-applications.menu. If you haven't altered it, submit a bug report. Exiting."
+        sys.exit()
+    xfcemenu = xfcemenu[:menuindex]
+    
+    return xfcemenu
+
+def preparepentoo(configdir):
+    if os.path.isfile(configdir + 'applications.menu'):
+        pentoomenufile = open(configdir + 'applications.menu', "r")
+    else:
+        print "Pentoo menu file not found. Exiting"
+        sys.exit()
+    pentoomenu = pentoomenufile.read()
+    pentoomenufile.close()
+    pentoostartindex = pentoomenu.find("<Menu><Name>Pentoo</Name>")
+    if pentoostartindex == -1:
+        print "Failure parsing pentoo applications.menu. Have you altered it? Exiting."
+        sys.exit()
+    
+    pentooendindex = pentoomenu.rfind("</Menu>")
+    if pentooendindex == -1:
+        print "Failure parsing pentoo applications.menu. Have you altered it? Exiting."
+        sys.exit()
+
+    pentoomenu = pentoomenu[pentoostartindex:pentooendindex]
+    
+    return pentoomenu
+
+def hackxfce(configdir):
+    '''Add e17 applications.menu to xfce-applications.menu'''
+    xfcemenu = preparexfce(configdir)
+    pentoomenu = preparepentoo(configdir)
+    finalmenu = xfcemenu + pentoomenu + '\n</Menu>'
+    if os.path.isfile(configdir + 'xfce-applications.menu'):
+        shutil.copy(configdir + 'xfce-applications.menu', configdir + 'xfce-applications.menu.bak')
+        print "XFCE menu configuration backed up to " + configdir + "xfce-applications.menu.bak"
+    tempfile = open(configdir + 'xfce-applications.menu', "w")
+    tempfile.write(finalmenu)
+    tempfile.close() 
+
+
 def main():
     '''
     This program is used to generate the menu in enlightenment for the pentoo livecd
@@ -416,6 +470,12 @@ def main():
         else:
             genxml(menu, HOME + '/.config/menus/')
 
+        if options.xfce:
+            hackxfce(HOME + '/.config/menus/')
+
+        sys.exit()
+
+
 if __name__ == "__main__":
 
     from optparse import OptionParser
@@ -439,6 +499,8 @@ if __name__ == "__main__":
     parser.add_option("-n", "--dry-run", action="store_true", dest="simulate", default=False,
                       help="Simulate only, show missing desktop files"
                            " and show what will be done")
+    parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
+                      help="Create menu entries for XFCE")
     (options, args) = parser.parse_args()
 
     try:

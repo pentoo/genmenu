@@ -2,5 +2,5 @@
 Name=Radare
 GenericName=
 Exec=gradare
-Icon=/usr/share/genmenu/pixmaps/rce-for.png
+Icon=/usr/share/genmenu/pixmaps/rce.png
 Type=Application

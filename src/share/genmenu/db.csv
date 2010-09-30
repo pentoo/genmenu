@@ -1,13 +1,14 @@
-app-forensics/autopsy,rce-for,autopsy.desktop
+app-crypt/xor-analyze,forensics,xor-analyze xor-dec xor-enc
+app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
-app-forensics/galleta,rce-for,galleta
-app-forensics/make-pdf,rce-for,make-pdf
-app-forensics/memdump,rce-for,memdump
-app-forensics/origami,rce-for,origami
-app-forensics/pasco,rce-for,pasco
-app-forensics/pdfid,rce-for,pdfid
-app-forensics/pdf-parser,rce-for,pdf-parser
-app-forensics/rdd,rce-for,rdd
+app-forensics/galleta,forensics,galleta
+app-forensics/pasco,forensics,pasco
+app-forensics/make-pdf,exploit,make-pdf-javascript
+app-forensics/memdump,forensics,memdump
+app-forensics/origami,forensics PDF,origami origami-gui
+app-forensics/pdfid,forensics PDF,pdfid
+app-forensics/pdf-parser,forensics PDF,pdf-parser
+app-forensics/rdd,forensics,rdd
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
@@ -32,7 +33,6 @@ app-crypt/chntpw,cracker,chntpw
 app-crypt/md5bf,cracker,md5bf
 app-crypt/johntheripper,cracker,john,
 app-crypt/ophcrack,cracker,ophcrack.desktop
-app-crypt/xor-analyze,rce-for,xor-enc xor-analyze
 dev-db/absinthe,database,absinthe,
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan,
@@ -45,10 +45,10 @@ dev-db/sqlibf,database,sqlibf,
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
-dev-util/edb,rce-for,edb.desktop
-dev-util/radare,rce-for,gradare.desktop
-dev-util/insight,rce-for,insight,
-dev-java/jad-bin,rce-for,/opt/bin/jad,
+dev-util/edb,rce,edb.desktop
+dev-util/radare,rce,gradare.desktop
+dev-util/insight,rce,insight,
+dev-java/jad-bin,rce,/opt/bin/jad,
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
@@ -79,7 +79,7 @@ net-analyzer/ike-scan,scanner,ike-scan
 net-analyzer/isic,forging,isic
 net-analyzer/macchanger,misc,macchanger
 net-analyzer/mbrowse,analyzer,mbrowse,
-net-analyzer/medusa,analyzer,medusa
+net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Web,metagoofil.py
 net-analyzer/metasploit,exploit,msf-console.desktop msf-web.desktop
@@ -190,9 +190,9 @@ net-wireless/wifiscanner,wireless,wifiscanner
 net-wireless/wifitap,wireless,wifitap
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
-sys-apps/dcfldd,rce-for,dcfldd
-sys-devel/gdb,rce-for,gdb
-sys-fs/dd-rescue,rce-for,dd_rescue
-sys-fs/ddrescue,rce-for,ddrescue
+sys-apps/dcfldd,forensics,dcfldd,--help
+sys-devel/gdb,rce,gdb
+sys-fs/dd-rescue,forensics,dd_rescue
+sys-fs/ddrescue,forensics,ddrescue
 x11-terms/xterm,none,xterm.desktop
 x11-terms/rxvt-unicode,none,urxvt.desktop

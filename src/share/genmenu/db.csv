@@ -1,3 +1,4 @@
+app-antivirus/malheur,rce,malheur
 app-crypt/xor-analyze,forensics,xor-analyze xor-dec xor-enc
 app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
@@ -56,11 +57,14 @@ net-analyzer/arpwatch,analyzer,arpwatch
 net-analyzer/authforce,cracker,authforce
 net-analyzer/autoscan-network,scanner,autoscan.desktop
 net-analyzer/bmon,analyzer,bmon
+net-analyzer/chaosreader,analyzer,chaosreader
 net-analyzer/cheops-ng,scanner,cheops-ng.desktop
 net-analyzer/dnsa,analyzer,dnsa
 net-analyzer/dnsenum,analyzer,dnsenum
 net-analyzer/driftnet,analyzer,driftnet.desktop
 net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
+net-analyzer/enum4linux,scanner Windows,enum4linux
+net-analyzer/etherape,analyzer,etherape
 net-analyzer/ettercap,mitm,ettercap,-G
 net-analyzer/fasttrack,exploit,fasttrack.desktop fasttrack-gui.desktop
 net-analyzer/fierce,footprint DNS,fierce.pl
@@ -77,7 +81,8 @@ net-analyzer/hydra,cracker,hydra.desktop
 net-analyzer/inguma,exploit,inguma
 net-analyzer/ike-scan,scanner,ike-scan
 net-analyzer/isic,forging,isic
-net-analyzer/macchanger,misc,macchanger
+net-analyzer/macchanger,forging,macchanger
+net-analyzer/maketh,forging,maketh
 net-analyzer/mbrowse,analyzer,mbrowse,
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
@@ -196,3 +201,4 @@ sys-fs/dd-rescue,forensics,dd_rescue
 sys-fs/ddrescue,forensics,ddrescue
 x11-terms/xterm,none,xterm.desktop
 x11-terms/rxvt-unicode,none,urxvt.desktop
+www-apps/beef,exploit,TODO

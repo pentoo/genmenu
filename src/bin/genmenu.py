@@ -413,6 +413,8 @@ def main():
     pkginstalled = []
     pkginstalled = listpackages(PORTDIR)
     notthere = []
+    genname=""
+    params=""
     below = "Pentoo"
     root_menu = find_menu_entry(menu.getroot(),below)
     
@@ -433,8 +435,8 @@ def main():
                         genname = ""
                     make_menu_entry(root_menu, db[y][2], db[y][1], params, genname)
                 except:
-                    print >> sys.stderr, "Something went wrong, obviously..."
-                    return -1
+                    print >> sys.stderr, "!!! Unable to generate entry for " + db[y][0] + "please report this to grimmlin@pentoo.ch"
+                    pass
         else:
             notthere.append(db[y][0])
 

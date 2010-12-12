@@ -78,6 +78,7 @@ net-analyzer/honeyd,misc,honeyd
 net-analyzer/hping,forging,hping2 hping3
 net-analyzer/hunt,scanner,hunt,
 net-analyzer/hydra,cracker,hydra.desktop
+net-analyzer/hyenae,forging,hyenae
 net-analyzer/inguma,exploit,inguma
 net-analyzer/ike-scan,scanner,ike-scan
 net-analyzer/isic,forging,isic

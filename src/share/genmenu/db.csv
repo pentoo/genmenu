@@ -157,6 +157,7 @@ net-misc/bridge-utils,mitm,brctl
 net-misc/curl,misc,curl
 net-misc/dhcpcd,misc,dhcpcd
 net-misc/etherwake,misc,etherwake.desktop
+net-misc/iaxclient,sip-voip,testcall wxiax
 net-misc/ipsorcery,forging,ipsorcery.desktop
 net-misc/iodine,misc,iodine,
 net-misc/minisip,sip-voip,minisip.desktop
@@ -176,6 +177,7 @@ net-misc/tightvnc,misc,vncviewer
 net-misc/tinc,misc,tinc.desktop
 net-misc/tsclient,misc,tsclient.desktop
 net-misc/voipong,sip-voip,voipong
+net-misc/warvox,sip-voip,warvox-launcher
 net-nds/gq,analyzer,gq.desktop
 net-nds/lat,analyzer,lat.desktop
 net-proxy/3proxy,proxy,3proxy

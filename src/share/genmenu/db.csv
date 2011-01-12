@@ -47,6 +47,7 @@ dev-db/sqlibf,database,sqlibf,
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
+dev-util/dissy,rce,dissy
 dev-util/edb,rce,edb.desktop
 dev-util/radare,rce,gradare.desktop
 dev-util/insight,rce,insight,

@@ -49,6 +49,7 @@ dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
 dev-util/dissy,rce,dissy
 dev-util/edb,rce,edb.desktop
+dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
 dev-util/radare,rce,gradare.desktop
 dev-util/insight,rce,insight,
 dev-java/jad-bin,rce,/opt/bin/jad,

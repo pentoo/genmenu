@@ -42,7 +42,6 @@ dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
 dev-db/sqid,database,sqid.rb
 dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
-dev-db/sqlinject,database,sqlinject
 dev-db/sqlibf,database,sqlibf,
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
@@ -202,6 +201,7 @@ net-wireless/cowpatty,wireless,cowpatty
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
+net-wireless/haraldscan,bluetooth,haraldscan
 net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/kismet-newcore,wireless,kismet.desktop

@@ -201,7 +201,7 @@ net-wireless/cowpatty,wireless,cowpatty
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
-net-wireless/haraldscan,bluetooth,haraldscan
+net-wireless/haraldscan,bluetooth,haraldscan.py
 net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/kismet-newcore,wireless,kismet.desktop

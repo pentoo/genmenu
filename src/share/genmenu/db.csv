@@ -1,5 +1,6 @@
 app-antivirus/malheur,rce,malheur
 app-crypt/xor-analyze,forensics,xor-analyze xor-dec xor-enc
+app-exploit/shellstorm,exploit,shellstorm.py
 app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,cracker,cmospwd
 app-forensics/galleta,forensics,galleta
@@ -10,6 +11,7 @@ app-forensics/origami,forensics PDF,origami origami-gui
 app-forensics/pdfid,forensics PDF,pdfid
 app-forensics/pdf-parser,forensics PDF,pdf-parser
 app-forensics/rdd,forensics,rdd
+app-forensics/volatility,forensics,vol.py,-h,Volatility
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
@@ -90,7 +92,7 @@ net-analyzer/maketh,forging,maketh
 net-analyzer/mbrowse,analyzer,mbrowse,
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
-net-analyzer/metagoofil,footprint Web,metagoofil.py
+net-analyzer/metagoofil,footprint Http,metagoofil.py
 net-analyzer/metasploit,exploit,msf-console.desktop msf-web.desktop
 net-analyzer/mosref,exploit,mosref mosref-src.desktop,
 net-analyzer/nbtscan,scanner Windows,nbtscan

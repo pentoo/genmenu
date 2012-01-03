@@ -297,6 +297,8 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
                     try:
                         shutil.copyfile(file, ICONDIR + iconfile)
                         os.system("sed -i -e 's/P2TERM/" + options.p2term + "/' " + ICONDIR + iconfile)
+                        if options.p2term == 'Terminal':
+                            os.system("sed -i -e 's:launch:\"launch:' -e '/launch/ s:$:\":' " + ICONDIR + iconfile)
                     except:
                         sys.stderr.write("Unable to copy " + iconfile + " to " + ICONDIR + "\n")
                         sys.stderr.write("Verify that you have write permissions in " + ICONDIR + "\n")

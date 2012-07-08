@@ -253,8 +253,13 @@ def create_desktop_entry(name, category, binname, params, genname):
     if options.p2term == "Terminal":
         de.setExec(options.p2term + ' -e "launch ' + binname + ' ' + params + '"')
     else:
-        de.setExec(options.p2term + " -e launch " + binname + " " + params)
+        de.setExec(binname + " " + params + " ; sudo -s;")
     return de
+
+def wipeXfceIconDir():
+    # Get rid of old files first if we're xfce
+    if options.xfce:
+        os.system("rm -rf " + ICONDIR + "/*")
 
 def make_menu_entry(root_menu, iconfiles, category, params, genname):
     root_category = category.split(" ")[0]
@@ -311,6 +316,9 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
         if options.vverbose:
             print etree.tostring(root_menu, pretty_print=True)
             print iconfile + " " + category
+        if options.xfce:
+            os.system("echo 'Terminal=true' >>" + ICONDIR + iconfile)
+            #os.system("sed -i 's/Exec=\(.*\)/Exec=\\1\; sudo -s\;/' " + ICONDIR + iconfile)
 
 
 def genxml(root_menu, configdir):
@@ -337,6 +345,9 @@ def main():
     '''
     This program is used to generate the menu in enlightenment for the pentoo livecd
     '''
+    if options.xfce:
+        if os.path.exists(ICONDIR):
+            wipeXfceIconDir()
     try:
         readcsv()
     except:

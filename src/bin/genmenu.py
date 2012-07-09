@@ -259,7 +259,7 @@ def create_desktop_entry(name, category, binname, params, genname):
 def wipeXfceIconDir():
     # Get rid of old files first if we're xfce
     if options.xfce:
-        os.system("rm -rf " + ICONDIR + "/*")
+        os.system("rm -rf " + ICONDIR + "/*.desktop")
 
 def make_menu_entry(root_menu, iconfiles, category, params, genname):
     root_category = category.split(" ")[0]

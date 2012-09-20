@@ -26,25 +26,25 @@ app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
 app-crypt/plaintoo,cracker,plaintoo.desktop
-app-crypt/pyrit,cracker,pyrit,
-app-crypt/rcracki_mt,cracker,rcracki_mt,
-app-crypt/cuda-multiforcer,cracker,cuda-multiforcer,
-app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt,
+app-crypt/pyrit,cracker,pyrit
+app-crypt/rcracki_mt,cracker,rcracki_mt
+app-crypt/cuda-multiforcer,cracker,cuda-multiforcer
+app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt
 app-crypt/SIPcrack,cracker,sipcrack
 app-crypt/SIPcrack,sip-voip,sipdump
 app-crypt/chntpw,cracker,chntpw
 app-crypt/md5bf,cracker,md5bf
-app-crypt/johntheripper,cracker,john,
+app-crypt/johntheripper,cracker,john
 app-crypt/oclhashcat-bin,cracker,oclhashcat
 app-crypt/ophcrack,cracker,ophcrack.desktop
-dev-db/absinthe,database,absinthe,
+dev-db/absinthe,database,absinthe
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
-dev-db/mssqlscan,database MSSQL,mssqlscan,
+dev-db/mssqlscan,database MSSQL,mssqlscan
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
 dev-db/sqid,database,sqid.rb
 dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
-dev-db/sqlibf,database,sqlibf,
+dev-db/sqlibf,database,sqlibf
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-db/sqlninja,database MSSQL,sqlninja
@@ -53,7 +53,7 @@ dev-util/edb,rce,edb.desktop
 dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
 dev-util/radare,rce,gradare.desktop
 dev-util/insight,rce,insight
-dev-java/jad-bin,rce,/opt/bin/jad
+dev-java/jad-bin,rce,jad
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
@@ -76,12 +76,12 @@ net-analyzer/fierce,footprint DNS,fierce.pl
 net-analyzer/firewalk,scanner,firewalk
 net-analyzer/fragroute,forging,fragroute
 net-analyzer/ftester,analyzer,ftest
-net-analyzer/geoedge,footprint Geolocation,geoedge.py,
+net-analyzer/geoedge,footprint Geolocation,geoedge.py
 net-analyzer/gnome-nettool,analyzer,gnome-nettool.desktop
 net-analyzer/gspoof,forging,gspoof,-g
 net-analyzer/honeyd,misc,honeyd
 net-analyzer/hping,forging,hping2 hping3
-net-analyzer/hunt,scanner,hunt,
+net-analyzer/hunt,scanner,hunt
 net-analyzer/hydra,cracker,hydra.desktop
 net-analyzer/hyenae,forging,hyenae
 net-analyzer/inguma,exploit,inguma
@@ -89,7 +89,7 @@ net-analyzer/ike-scan,scanner,ike-scan
 net-analyzer/isic,forging,isic
 net-analyzer/macchanger,forging,macchanger
 net-analyzer/maketh,forging,maketh
-net-analyzer/mbrowse,analyzer,mbrowse,
+net-analyzer/mbrowse,analyzer,mbrowse
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Http,metagoofil.py
@@ -99,7 +99,7 @@ net-analyzer/nbtscan,scanner Windows,nbtscan
 net-analyzer/nessus,scanner,nessus.desktop
 net-analyzer/netdude,analyzer,netdude.desktop
 net-analyzer/netmap,analyzer,netmap
-net-analyzer/netwag,forging,netwag,
+net-analyzer/netwag,forging,netwag
 net-analyzer/nikto,scanner Http,nikto
 net-analyzer/ncrack,cracker,ncrack
 net-analyzer/nmap,scanner,nmap.desktop
@@ -108,7 +108,7 @@ net-analyzer/ntop,analyzer,ntop.desktop
 net-analyzer/ntp-fingerprint,footprint Fingerprint Services,ntp-fingerprint
 net-analyzer/onesixtyone,scanner,onesixtyone
 net-analyzer/p0f,footprint Fingerprint OS,p0f
-net-analyzer/packit,forging,packit,
+net-analyzer/packit,forging,packit
 net-analyzer/paketto,analyzer,lc minewt paratrace
 net-analyzer/paketto,scanner,scanrand
 net-analyzer/polenum,misc,polenum
@@ -126,7 +126,7 @@ net-analyzer/snort,misc,snort
 net-analyzer/sslstrip,mitm,sslstrip
 net-analyzer/sslsniff,mitm,sslsniff
 net-analyzer/ssltest,analyzer,ssltest
-net-analyzer/subdomainer,footprint DNS,subdomainer.py,
+net-analyzer/subdomainer,footprint DNS,subdomainer.py
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
 net-analyzer/thc-pptp-bruter,cracker,thc-pptp-bruter
 net-analyzer/thcrut,analyzer,thcrut
@@ -137,7 +137,7 @@ net-analyzer/upnpwn,exploit,upnpwn
 net-analyzer/videojak,sip-voip,videojak
 net-analyzer/voiphopper,sip-voip,voiphopper
 net-analyzer/vomit,sip-voip,vomit
-net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console,
+net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console
 net-analyzer/waffit,footprint Http,wafw00f.py
 net-analyzer/wafp,footprint Http,wafp
 net-analyzer/wapiti,scanner Http,wapiti
@@ -162,7 +162,7 @@ net-misc/dhcpcd,misc,dhcpcd
 net-misc/etherwake,misc,etherwake.desktop
 net-misc/iaxclient,sip-voip,testcall wxiax
 net-misc/ipsorcery,forging,ipsorcery.desktop
-net-misc/iodine,misc,iodine,
+net-misc/iodine,misc,iodine
 net-misc/minisip,sip-voip,minisip.desktop
 net-misc/nemesis,forging,nemesis
 net-misc/partysip,sip-voip,partysip
@@ -188,11 +188,11 @@ net-proxy/burpsuite,proxy,burpsuite.desktop
 net-proxy/httpush,proxy,httpush
 net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
-net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop,
+net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
 net-proxy/webscarab,proxy,webscarab.desktop
 net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
-net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,
-net-wireless/airoscript,wireless,airoscript,
+net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
+net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
@@ -208,7 +208,7 @@ net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/kismet-newcore,wireless,kismet.desktop
 net-wireless/hostapd,wireless,hostapd
-net-wireless/mdk,wireless,mdk3,
+net-wireless/mdk,wireless,mdk3
 net-wireless/ska,wireless,ska
 net-wireless/spectools,wireless,spectool_curses spectool_gtk spectool_net
 net-wireless/wavemon,wireless,wavemon.desktop

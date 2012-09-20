@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Nmap
+Name=Nmap GUI
 Exec=nmapfe
 StartupNotify=false
 X-Enlightenment-WaitExit=false

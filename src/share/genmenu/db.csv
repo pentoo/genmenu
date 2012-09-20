@@ -52,8 +52,8 @@ dev-util/dissy,rce,dissy
 dev-util/edb,rce,edb.desktop
 dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
 dev-util/radare,rce,gradare.desktop
-dev-util/insight,rce,insight,
-dev-java/jad-bin,rce,/opt/bin/jad,
+dev-util/insight,rce,insight
+dev-java/jad-bin,rce,/opt/bin/jad
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
@@ -93,8 +93,8 @@ net-analyzer/mbrowse,analyzer,mbrowse,
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Http,metagoofil.py
-net-analyzer/metasploit,exploit,msf-console.desktop msf-web.desktop
-net-analyzer/mosref,exploit,mosref mosref-src.desktop,
+net-analyzer/metasploit,exploit,msf-console.desktop
+net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
 net-analyzer/nessus,scanner,nessus.desktop
 net-analyzer/netdude,analyzer,netdude.desktop

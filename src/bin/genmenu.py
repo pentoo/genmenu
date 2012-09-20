@@ -6,7 +6,7 @@
 # WARNING !!! UGLY CODE AHEAD !!!
 #
 
-import sys,os,re,shutil
+import sys,os,re,shutil,subprocess
 
 #from output import red, green, blue, bold
 import csv
@@ -65,6 +65,7 @@ class desktopfile:
     Exec = "Exec="
     Icon = "Icon=/usr/share/genmenu/pixmaps/"
     Type = "Type=Application"
+    Terminal = "Terminal="
 
     def setName(self, Name):
         self.Name += Name
@@ -78,8 +79,11 @@ class desktopfile:
     def setExec(self, Exec):
         self.Exec += Exec
 
+    def setTerminal(self, Terminal):
+        self.Terminal += Terminal
+
     def getDesktopFile(self):
-        return self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type
+        return self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal
 
     def writeDesktopFile(self, dest):
         try:
@@ -88,7 +92,7 @@ class desktopfile:
             sys.stderr.write("Unable to open " + dest + " for writing\n")
             sys.stderr.write("Verify that you have write permissions")
             return -1
-        for x in self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type:
+        for x in self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal:
             file.write(x + "\n")
         file.close()
 
@@ -253,7 +257,14 @@ def create_desktop_entry(name, category, binname, params, genname):
     if options.p2term == "Terminal":
         de.setExec(options.p2term + ' -e "launch ' + binname + ' ' + params + '"')
     else:
-        de.setExec(binname + " " + params + " ; sudo -s;")
+        run_command="whereis -b " + binname + "| awk '{printf $2}' "
+        binfullname=subprocess.check_output(run_command, shell=True)
+        matchObj = re.match( r'.*/sbin/.*', binfullname, re.M|re.I)
+        bintail = " ; bash -l"
+        if matchObj:
+            bintail = " ; sudo -s"
+        de.setExec("/bin/sh -c '" + binfullname + " " + params + bintail +"'")
+    de.setTerminal("True")
     return de
 
 def wipeXfceIconDir():
@@ -276,7 +287,7 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
             else:
                 if options.vverbose:
                     print submenus
-         
+
                 menu = find_menu_entry(base_menu, submenus)
                 if menu == None:
                     menu = add_menu_entry(base_menu, root_category, submenus)
@@ -316,8 +327,8 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
         if options.vverbose:
             print etree.tostring(root_menu, pretty_print=True)
             print iconfile + " " + category
-        if options.xfce:
-            os.system("echo 'Terminal=true' >>" + ICONDIR + iconfile)
+#        if options.xfce:
+#            os.system("echo 'Terminal=true' >>" + ICONDIR + iconfile)
             #os.system("sed -i 's/Exec=\(.*\)/Exec=\\1\; sudo -s\;/' " + ICONDIR + iconfile)
 
 
@@ -361,7 +372,7 @@ def main():
         a.setIcon("toto.png")
         a.writeDesktopFile("./toto.desktop")
         return 0
-    
+
     if options.listsupported:
         listdb()
         return 0

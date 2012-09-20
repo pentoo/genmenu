@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=MSF Web
-Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/msfweb3
+Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/msfweb
 Icon=/usr/share/genmenu/pixmaps/exploit.png
 Type=Application

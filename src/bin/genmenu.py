@@ -66,6 +66,7 @@ class desktopfile:
     Icon = "Icon=/usr/share/genmenu/pixmaps/"
     Type = "Type=Application"
     Terminal = "Terminal="
+    Categories = "Categories=Pentoo;"
 
     def setName(self, Name):
         self.Name += Name
@@ -83,7 +84,7 @@ class desktopfile:
         self.Terminal += Terminal
 
     def getDesktopFile(self):
-        return self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal
+        return self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal, self.Categories
 
     def writeDesktopFile(self, dest):
         try:
@@ -92,7 +93,7 @@ class desktopfile:
             sys.stderr.write("Unable to open " + dest + " for writing\n")
             sys.stderr.write("Verify that you have write permissions")
             return -1
-        for x in self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal:
+        for x in self.Header, self.Name, self.GenName, self.Exec, self.Icon, self.Type, self.Terminal, self.Categories:
             file.write(x + "\n")
         file.close()
 
@@ -263,8 +264,8 @@ def create_desktop_entry(name, category, binname, params, genname):
         bintail = " ; bash -l"
         if matchObj:
             bintail = " ; sudo -s"
-        de.setExec("/bin/sh -c '" + binfullname + " " + params + bintail +"'")
-    de.setTerminal("True")
+        de.setExec("/bin/sh -c \"" + binfullname + " " + params + bintail +"\"")
+    de.setTerminal("true")
     return de
 
 def wipeXfceIconDir():
@@ -346,6 +347,9 @@ def genxml(root_menu, configdir):
             os.makedirs(configdir)
     if options.xfce:
         mymenu = open(configdir + '/xfce-applications.menu', "w")
+        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+    elif options.kde:
+	mymenu = open(/etc/xdg/menus/applications-merged + '/applications.menu', "w")
         mymenu.write(etree.tostring(root_menu, pretty_print=True))
     else:
         mymenu = open(configdir + '/applications.menu', "w")
@@ -481,6 +485,8 @@ if __name__ == "__main__":
                            " and show what will be done")
     parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
                       help="Create menu entries for XFCE")
+    parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
+                      help="Create menu entries for KDE4")                  
     (options, args) = parser.parse_args()
 
     try:

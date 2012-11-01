@@ -348,9 +348,6 @@ def genxml(root_menu, configdir):
     if options.xfce:
         mymenu = open(configdir + '/xfce-applications.menu', "w")
         mymenu.write(etree.tostring(root_menu, pretty_print=True))
-    elif options.kde:
-	mymenu = open(/etc/xdg/menus/applications-merged + '/applications.menu', "w")
-        mymenu.write(etree.tostring(root_menu, pretty_print=True))
     else:
         mymenu = open(configdir + '/applications.menu', "w")
         mymenu.write(etree.tostring(root_menu, pretty_print=True))
@@ -485,8 +482,6 @@ if __name__ == "__main__":
                            " and show what will be done")
     parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
                       help="Create menu entries for XFCE")
-    parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
-                      help="Create menu entries for KDE4")                  
     (options, args) = parser.parse_args()
 
     try:

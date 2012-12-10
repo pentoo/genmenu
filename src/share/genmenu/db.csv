@@ -1,21 +1,41 @@
+app-admin/testdisk,forensics,testdisk
 app-antivirus/malheur,rce,malheur
+app-crypt/SIPcrack,sip-voip,sipcrack sipdump
+app-crypt/asleap,wireless,asleap
+app-crypt/chntpw,cracker,chntpw
+app-crypt/cryptohaze-combined,cracker,cryptohaze-combined
+app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt
+app-crypt/hashcat-gui,cracker,hashcat-gui
+app-crypt/johntheripper,cracker,john
+app-crypt/md5bf,cracker,md5bf
+app-crypt/oclhashcat-bin,cracker,oclhashcat
+app-crypt/ophcrack,cracker,ophcrack.desktop
+app-crypt/plaintoo,cracker,plaintoo.desktop
+app-crypt/pyrit,cracker,pyrit
+app-crypt/rcracki_mt,cracker,rcracki_mt
 app-crypt/xor-analyze,forensics,xor-analyze xor-dec xor-enc
-app-exploit/shellstorm,exploit,shellstorm.py
+app-exploits/packetstormexploits,exploit,packetstormexploits
+app-exploits/shellstorm,exploit,shellstorm.py
 app-forensics/autopsy,forensics,autopsy.desktop
-app-forensics/cmospwd,cracker,cmospwd
+app-forensics/cmospwd,forensics,cmospwd
+app-forensics/dff,forensics,dff
+app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
-app-forensics/pasco,forensics,pasco
 app-forensics/make-pdf,exploit,make-pdf-javascript
+app-forensics/make-pdf,forensics,make-pdf
 app-forensics/memdump,forensics,memdump
 app-forensics/origami,forensics PDF,origami origami-gui
-app-forensics/pdfid,forensics PDF,pdfid
+app-forensics/pasco,forensics,pasco
 app-forensics/pdf-parser,forensics PDF,pdf-parser
+app-forensics/pdfid,forensics PDF,pdfid
 app-forensics/rdd,forensics,rdd
+app-forensics/sleuthkit,forensics,sleuthkit
 app-forensics/volatility,forensics,vol.py,-h,Volatility
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
 app-fuzz/fusil,fuzzers Fusil,fusil-firefox fusil-clamav fusil-imagemagick fusil-gettext fusil-mplayer fusil-zzuf fusil-ogg123 fusil-python fusil-php fusil-vlc fusil-libc-printf fusil-wizzard fusil-poppler fusil-gstreamer
+app-fuzz/fuzzdb,fuzzers,fuzzdb
 app-fuzz/fuzzer-server,fuzzers,fuzzer-server
 app-fuzz/http-fuzz,fuzzers,httpfuzz
 app-fuzz/ohrwurm,fuzzers,ohrwurm
@@ -25,47 +45,48 @@ app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
-app-crypt/plaintoo,cracker,plaintoo.desktop
-app-crypt/pyrit,cracker,pyrit
-app-crypt/rcracki_mt,cracker,rcracki_mt
-app-crypt/cuda-multiforcer,cracker,cuda-multiforcer
-app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt
-app-crypt/SIPcrack,cracker,sipcrack
-app-crypt/SIPcrack,sip-voip,sipdump
-app-crypt/chntpw,cracker,chntpw
-app-crypt/md5bf,cracker,md5bf
-app-crypt/johntheripper,cracker,john
-app-crypt/oclhashcat-bin,cracker,oclhashcat
-app-crypt/ophcrack,cracker,ophcrack.desktop
 dev-db/absinthe,database,absinthe
+app-misc/hivex,forensics,hivex
+app-pda/ideviceinstaller,mobile iDevice,ideviceinstaller
+app-pda/ifuse,mobile,ifuse
+app-pda/libimobiledevice,mobile iDevice,idevicebackup idevicedate ideviceenterrecovery ideviceimagemounter ideviceinfo idevicepair idevicescreenshot idevicesyslog
+app-text/cewl,cracker,cewl
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
 dev-db/sqid,database,sqid.rb
-dev-db/sqlat,database MSSQL,sqldirtree sqlsamdump sqlanlz sqldict sqlquery sqlreggetvalue sqlupload sqldumplogins sqlregenumkey
 dev-db/sqlbf,database,sqlbf
 dev-db/sqlibf,database,sqlibf
+dev-db/sqlitebrowser,database,sqlitebrowser
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
-dev-db/sqlninja,database MSSQL,sqlninja
+dev-java/jad-bin,rce,jad
+dev-lang/nasm,rce,nasm
+dev-util/apktool,mobile,apktool
+dev-util/dex2jar,mobile,dex2jar
 dev-util/dissy,rce,dissy
 dev-util/edb,rce,edb.desktop
+dev-util/jd-gui-bin,mobile,jd-gui
+dev-util/ltrace,rce,ltrace
+dev-util/insight,rce,insight
 dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
 dev-util/radare,rce,gradare.desktop
-dev-util/insight,rce,insight
-dev-java/jad-bin,rce,jad
+dev-util/radare2,rce,radare2
+dev-util/strace,rce,strace
+media-radio/fldigi,radio,fldigi
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
+net-analyzer/arpantispoofer,analyzer,arpantispoofer
 net-analyzer/arpwatch,analyzer,arpwatch
 net-analyzer/authforce,cracker,authforce
 net-analyzer/autoscan-network,scanner,autoscan.desktop
 net-analyzer/bmon,analyzer,bmon
 net-analyzer/chaosreader,analyzer,chaosreader
-net-analyzer/cheops-ng,scanner,cheops-ng.desktop
 net-analyzer/davtest,exploit,davtest.pl
 net-analyzer/dnsa,analyzer,dnsa
 net-analyzer/dnsenum,analyzer,dnsenum
+net-analyzer/dnstracer,analyzer,dnstracer
 net-analyzer/driftnet,analyzer,driftnet.desktop
 net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
 net-analyzer/enum4linux,scanner Windows,enum4linux
@@ -84,8 +105,8 @@ net-analyzer/hping,forging,hping2 hping3
 net-analyzer/hunt,scanner,hunt
 net-analyzer/hydra,cracker,hydra.desktop
 net-analyzer/hyenae,forging,hyenae
-net-analyzer/inguma,exploit,inguma
 net-analyzer/ike-scan,scanner,ike-scan
+net-analyzer/inguma,exploit,inguma
 net-analyzer/isic,forging,isic
 net-analyzer/macchanger,forging,macchanger
 net-analyzer/maketh,forging,maketh
@@ -93,15 +114,18 @@ net-analyzer/mbrowse,analyzer,mbrowse
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Http,metagoofil.py
-net-analyzer/metasploit,exploit,msf-console.desktop
+net-analyzer/metasploit,exploit,msf-console.desktop armitage
 net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
+net-analyzer/ncrack,cracker,ncrack
 net-analyzer/nessus,scanner,nessus.desktop
+net-analyzer/netcat6,analyzer,netcat6
+net-analyzer/netdiscover,analyzer,netdiscover
 net-analyzer/netdude,analyzer,netdude.desktop
 net-analyzer/netmap,analyzer,netmap
 net-analyzer/netwag,forging,netwag
+net-analyzer/ngrep,analyzer,ngrep
 net-analyzer/nikto,scanner Http,nikto
-net-analyzer/ncrack,cracker,ncrack
 net-analyzer/nmap,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner Windows,nmbscan
 net-analyzer/ntop,analyzer,ntop.desktop
@@ -114,7 +138,6 @@ net-analyzer/paketto,scanner,scanrand
 net-analyzer/polenum,misc,polenum
 net-analyzer/ppscan,scanner,ppscan
 net-analyzer/rain,forging,rain,--help
-net-analyzer/sara,scanner,sara.desktop
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
 net-analyzer/set,exploit,social_engineering_toolkit
 net-analyzer/siphon,footprint Fingerprint OS,siphon
@@ -123,14 +146,19 @@ net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum
 net-analyzer/snort,misc,snort
-net-analyzer/sslstrip,mitm,sslstrip
+net-analyzer/sqlninja,database MSSQL,sqlninja
 net-analyzer/sslsniff,mitm,sslsniff
+net-analyzer/sslstrip,mitm,sslstrip
 net-analyzer/ssltest,analyzer,ssltest
 net-analyzer/subdomainer,footprint DNS,subdomainer.py
+net-analyzer/tcpdump,analyzer,tcpdump
+net-analyzer/tcpreplay,analyzer,tcpreplay
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
+net-analyzer/thc-ipv6,analyzer,thc-ipv6
 net-analyzer/thc-pptp-bruter,cracker,thc-pptp-bruter
 net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
+net-analyzer/traceroute,analyzer,traceroute
 net-analyzer/ucsniff,sip-voip,ucsniff
 net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/upnpwn,exploit,upnpwn
@@ -144,11 +172,13 @@ net-analyzer/wapiti,scanner Http,wapiti
 net-analyzer/webshag,scanner Http,webshag.desktop
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/whatweb,footprint Http,whatweb
+net-analyzer/wireshark,analyzer,wireshark
 net-analyzer/wolpertinger,scanner,wolpertinger
-net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
+net-analyzer/wpscan,scanner,wpscan
 net-analyzer/xplico,analyzer,xplico
+net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
 net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
-net-analyzer/zodiac,analyzer,zodiac.desktop
+net-dialup/freeradius,wireless,freeradius
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop
 net-fs/winexe,exploit,winexe
@@ -156,14 +186,14 @@ net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd
 net-irc/irssi,none,irssi
 net-irc/xchat,none,xchat.desktop
+net-libs/libbtbb,bluetooth,libbtbb
 net-misc/bridge-utils,mitm,brctl
 net-misc/curl,misc,curl
 net-misc/dhcpcd,misc,dhcpcd
 net-misc/etherwake,misc,etherwake.desktop
 net-misc/iaxclient,sip-voip,testcall wxiax
-net-misc/ipsorcery,forging,ipsorcery.desktop
 net-misc/iodine,misc,iodine
-net-misc/minisip,sip-voip,minisip.desktop
+net-misc/ipsorcery,forging,ipsorcery.desktop
 net-misc/nemesis,forging,nemesis
 net-misc/partysip,sip-voip,partysip
 net-misc/proxychains,proxy,proxychains
@@ -190,39 +220,62 @@ net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
 net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
 net-proxy/webscarab,proxy,webscarab.desktop
-net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
+net-proxy/tsocks,proxy,tsocks
+net-proxy/zaproxy,proxy,zaproxy
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop
 net-wireless/airtraf,wireless,airtraf
-net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
+net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.desktop
 net-wireless/bluemaho,bluetooth,bluemaho.desktop
+net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
+net-wireless/chirp,radio,chirp
 net-wireless/cowpatty,wireless,cowpatty
+net-wireless/crda,wireless,crda
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
+net-wireless/fern-wifi-cracker,wireless,fern-wifi-cracker
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
+net-wireless/gr-air-modes,radio,gr-air-modes
+net-wireless/gr-baz,radio,gr-baz
+net-wireless/gr-osmosdr,radio,gr-osmosdr
 net-wireless/haraldscan,bluetooth,haraldscan.py
-net-wireless/karmetasploit,mitm,karmeta.sh
-net-wireless/kismet,wireless,kismet.desktop
-net-wireless/kismet-newcore,wireless,kismet.desktop
 net-wireless/hostapd,wireless,hostapd
+net-wireless/karmetasploit,mitm,karmeta.sh
+net-wireless/karmetasploit,wireless,karmetasploit
+net-wireless/kismet,wireless,kismet.desktop
+net-wireless/kismet-ubertooth,bluetooth,kismet-ubertooth
 net-wireless/mdk,wireless,mdk3
+net-wireless/multimode,radio,multimode
+net-wireless/op25,radio,op25
+net-wireless/orinoco-fwutils,wireless,orinoco-fwutils
+net-wireless/reaver,wireless,reaver
+net-wireless/rfkill,wireless,rfkill
+net-wireless/rtl-sdr,radio,rtl-sdr
 net-wireless/ska,wireless,ska
 net-wireless/spectools,wireless,spectool_curses spectool_gtk spectool_net
+net-wireless/ubertooth,bluetooth,ubertooth
+net-wireless/uhd,radio,uhd
+net-wireless/virtualradar-bin,radio,virtualradar-bin
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect
 net-wireless/wepattack,wireless,wepattack
+net-wireless/wifi-radar,wireless,wifi-radar
+net-wireless/wifite,wireless,wifite
 net-wireless/wepdecrypt,wireless,wepdecrypt
 net-wireless/wifiscanner,wireless,wifiscanner
 net-wireless/wifitap,wireless,wifitap
+net-wireless/wireless-tools,wireless,wireless-tools
 net-wireless/wpa_supplicant,wireless,wpa_supplicant
 net-www/apache,misc,apache.desktop
+sci-geosciences/gpsd,wireless,gpsd
 sys-apps/dcfldd,forensics,dcfldd,--help
+sys-devel/clang,mobile,clang
 sys-devel/gdb,rce,gdb
 sys-fs/dd-rescue,forensics,dd_rescue
 sys-fs/ddrescue,forensics,ddrescue
-x11-terms/xterm,none,xterm.desktop
-x11-terms/rxvt-unicode,none,urxvt.desktop
 www-apps/beef,exploit,TODO
+x11-terms/rxvt-unicode,none,urxvt.desktop
+x11-terms/xterm,none,xterm.desktop

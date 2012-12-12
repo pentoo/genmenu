@@ -21,6 +21,7 @@ app-forensics/cmospwd,forensics,cmospwd
 app-forensics/dff,forensics,dff
 app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
+app-forensics/inception,forensics,inception
 app-forensics/make-pdf,exploit,make-pdf-javascript
 app-forensics/make-pdf,forensics,make-pdf
 app-forensics/memdump,forensics,memdump

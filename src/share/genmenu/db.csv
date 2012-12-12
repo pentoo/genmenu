@@ -6,6 +6,7 @@ app-crypt/chntpw,cracker,chntpw
 app-crypt/cryptohaze-combined,cracker,cryptohaze-combined
 app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt
 app-crypt/hashcat-gui,cracker,hashcat-gui
+app-crypt/hashkill,cracker,hashkill
 app-crypt/johntheripper,cracker,john
 app-crypt/md5bf,cracker,md5bf
 app-crypt/oclhashcat-bin,cracker,oclhashcat

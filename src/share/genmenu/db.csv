@@ -19,7 +19,7 @@ app-exploits/packetstormexploits,exploit,packetstormexploits
 app-exploits/shellstorm,exploit,shellstorm.py
 app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,forensics,cmospwd
-app-forensics/dff,forensics,dff
+app-forensics/dff,forensics,dff,-g
 app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
 app-forensics/inception,forensics,inception
@@ -31,7 +31,7 @@ app-forensics/pasco,forensics,pasco
 app-forensics/pdf-parser,forensics PDF,pdf-parser
 app-forensics/pdfid,forensics PDF,pdfid
 app-forensics/rdd,forensics,rdd
-app-forensics/sleuthkit,forensics,sleuthkit
+app-forensics/sleuthkit,forensics Sleuthkit,blkcalc blkcat blkls blkstat ffind fls fsstat hfind icat ifind ils img_cat img_stat istat jcat jls mactime mmcat mmls mmstat sigfind sorter srch_strings tsk_comparedir tsk_gettimes tsk_loaddb tsk_recover
 app-forensics/volatility,forensics,vol.py,-h,Volatility
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed

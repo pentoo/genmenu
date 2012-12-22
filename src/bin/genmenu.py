@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # This code in distributed under GPLv2
 # Copyright Michael Zanetta grimmlin@pentoo.ch

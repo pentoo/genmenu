@@ -47,7 +47,7 @@ app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
 dev-db/absinthe,database,absinthe
-app-misc/hivex,forensics,hivex
+app-misc/hivex,forensics Hivex,hivexget hivexml hivexregedit hivexsh
 app-pda/ideviceinstaller,mobile iDevice,ideviceinstaller
 app-pda/ifuse,mobile,ifuse
 app-pda/libimobiledevice,mobile iDevice,idevicebackup idevicedate ideviceenterrecovery ideviceimagemounter ideviceinfo idevicepair idevicescreenshot idevicesyslog

@@ -42,6 +42,7 @@ app-fuzz/http-fuzz,fuzzers,httpfuzz
 app-fuzz/ohrwurm,fuzzers,ohrwurm
 app-fuzz/protos,fuzzers,protos
 app-fuzz/scapy,fuzzers,scapy
+app-fuzz/slowhttptest,fuzzers,slowhttptest
 app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer

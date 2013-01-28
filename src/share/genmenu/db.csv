@@ -74,6 +74,7 @@ dev-util/insight,rce,insight
 dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
 dev-util/radare,rce,gradare.desktop
 dev-util/radare2,rce,radare2
+dev-util/skipfish,scanner,skipfish
 dev-util/strace,rce,strace
 media-radio/fldigi,radio,fldigi
 net-analyzer/aimsniff,analyzer,aimsniff
@@ -221,6 +222,7 @@ net-proxy/httpush,proxy,httpush
 net-proxy/paros,proxy,paros.desktop
 net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
 net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
+net-proxy/ratproxy,proxy,ratproxy ratproxy-report.sh
 net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
 net-proxy/zaproxy,proxy,zaproxy

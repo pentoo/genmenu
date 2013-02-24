@@ -32,7 +32,7 @@ app-forensics/pdfid,forensics PDF,pdfid
 app-forensics/rdd,forensics,rdd
 app-forensics/sleuthkit,forensics Sleuthkit,blkcalc blkcat blkls blkstat ffind fls fsstat hfind icat ifind ils img_cat img_stat istat jcat jls mactime mmcat mmls mmstat sigfind sorter srch_strings tsk_comparedir tsk_gettimes tsk_loaddb tsk_recover
 app-forensics/volatility,forensics,volatility
-app-forensics/vshadow,forensics,vshadowinfo vshadowmount
+app-forensics/libvshadow,forensics,vshadowinfo vshadowmount
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss

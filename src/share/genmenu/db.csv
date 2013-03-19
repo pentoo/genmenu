@@ -226,7 +226,7 @@ net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
 net-proxy/ratproxy,proxy,ratproxy ratproxy-report.sh
 net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
-net-proxy/zaproxy,proxy,zaproxy
+net-proxy/zaproxy,proxy,zaproxy,
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn

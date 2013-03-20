@@ -1,0 +1,18 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN" "http://standards.freedesktop.org/menu-spec/menu-1.0.dtd">
+<Menu><Name>Applications</Name>
+<MergeFile type="parent">/etc/xdg/menus/cinnamon-applications.menu</MergeFile>
+
+ <Menu>
+ <Name>Pentoo</Name>
+ <Directory>Pentoo.directory</Directory>
+    <Include>
+      <And>
+        <Category>Pentoo</Category>
+      </And>
+      <And>
+        <Category>Penetration</Category>
+      </And>
+    </Include>
+ </Menu>
+
+</Menu>

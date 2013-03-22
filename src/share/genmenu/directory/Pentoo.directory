@@ -4,3 +4,4 @@ GenericName=Pentoo Tools
 Version=1.0
 Type=Directory
 Icon=/usr/share/genmenu/pixmaps/pentoo.png
+X-Enlightenment-Menu=main/0

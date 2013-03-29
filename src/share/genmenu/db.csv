@@ -188,7 +188,7 @@ net-firewall/fwbuilder,misc,fwbuilder.desktop
 net-fs/winexe,exploit,winexe
 net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd
-net-irc/irssi,none,irssi
+net-irc/irssi,none,irssi,--help
 net-irc/xchat,none,xchat.desktop
 net-libs/libbtbb,bluetooth,libbtbb
 net-misc/bridge-utils,mitm,brctl

@@ -147,9 +147,9 @@ def appendcsv():
 
 #REM Almost done, need to sanitize tabbed output
 def listdb():
-    print green("*****************************************")
-    print green("    Listing all supported packages ")
-    print green("*****************************************")
+    print "*****************************************"
+    print "    Listing all supported packages "
+    print "*****************************************"
     print "Package\t\tMenu category"
     for y in range(db.__len__()):
         if db[y][0].__len__() < 15:

@@ -498,8 +498,6 @@ if __name__ == "__main__":
                       help="Testing module during dev")
     parser.add_option("-a", "--add", action="store_true", dest="addcsventry", default=False,
                       help="Test xml")
-    parser.add_option("-e", "--extramenu", action="store_true", dest="extramenu", default=False,
-                      help="Put the pentoo menu at top")
     parser.add_option("-v", "--verbose", action="store_true", dest="verbose", default=False,
                       help="Show what's going on")
     parser.add_option("-V", "--very-verbose", action="store_true", dest="vverbose", default=False,
@@ -511,6 +509,8 @@ if __name__ == "__main__":
     parser.add_option("-n", "--dry-run", action="store_true", dest="simulate", default=False,
                       help="Simulate only, show missing desktop files"
                            " and show what will be done")
+    parser.add_option("-e", "--extramenu", action="store_true", dest="extramenu", default=False,
+                      help="Create menu entries for E17")
     parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
                       help="Create menu entries for XFCE")
     parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,

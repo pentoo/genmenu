@@ -95,7 +95,7 @@ net-analyzer/driftnet,analyzer,driftnet.desktop
 net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
 net-analyzer/enum4linux,scanner Windows,enum4linux
 net-analyzer/etherape,analyzer,etherape
-net-analyzer/ettercap,mitm,ettercap,-G
+net-analyzer/ettercap,mitm,ettercap.desktop
 net-analyzer/fasttrack,exploit,fasttrack.desktop fasttrack-gui.desktop
 net-analyzer/fierce,footprint DNS,fierce.pl
 net-analyzer/firewalk,scanner,firewalk
@@ -226,7 +226,7 @@ net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
 net-proxy/ratproxy,proxy,ratproxy ratproxy-report.sh
 net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
-net-proxy/zaproxy,proxy,zaproxy,
+net-proxy/zaproxy,proxy,zaproxy.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn

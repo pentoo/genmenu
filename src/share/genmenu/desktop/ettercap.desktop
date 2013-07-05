@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ettercap
+GenericName=
+Exec="sudo -E /usr/bin/ettercap -G"
+Type=Application
+Terminal=true
+Icon=/usr/share/genmenu/pixmaps/ettercap.png
+Categories=Pentoo;X-Mitm;

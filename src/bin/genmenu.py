@@ -271,10 +271,10 @@ def create_desktop_entry(name, category, binname, params, genname):
         run_command="whereis -b " + binname + "| awk '{printf $2}' "
         binfullname=subprocess.check_output(run_command, shell=True)
         matchObj = re.match( r'.*/sbin/.*', binfullname, re.M|re.I)
-        bintail = " ; bash -l"
+        bintail = "bash -l"
         if matchObj:
-            bintail = " ; sudo -s"
-        de.setExec("/bin/sh -c \"" + binfullname + " " + params + bintail +"\"")
+            bintail = "sudo -s"
+        de.setExec("/bin/sh -c " + "\"/usr/bin/launch" +" '"+binfullname+"' " + "'"+params+"' "+"'"+bintail+"'" "\"")
     de.setTerminal("true")
     de.setCategory("X-" + category.capitalize() + ";")
     return de

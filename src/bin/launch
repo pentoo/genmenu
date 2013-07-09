@@ -1,4 +1,9 @@
 #!/bin/sh
 
-$@
-/bin/bash -l
+#$@
+#/bin/bash -l
+
+echo $1 >> $HOME/.bash_history
+echo "bash\$ $1"
+$1 $2
+$3

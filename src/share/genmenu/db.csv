@@ -227,7 +227,7 @@ net-proxy/ratproxy,proxy,ratproxy ratproxy-report.sh
 net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
 net-proxy/zaproxy,proxy,zaproxy.desktop
-net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng
+net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,--help
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop

@@ -1,9 +1,12 @@
 #!/bin/sh
 
-#$@
-#/bin/bash -l
+if [[ "$3" == *sudo* ]]
+then
+    sudo sh -c "echo $1 >> /root/.bash_history"
+else
+    echo $1 >> $HOME/.bash_history
+fi
 
-echo $1 >> $HOME/.bash_history
 echo "bash\$ $1"
 $1 $2
 $3

@@ -39,12 +39,12 @@ app-fuzz/bss,fuzzers,bss
 app-fuzz/fusil,fuzzers Fusil,fusil-firefox fusil-clamav fusil-imagemagick fusil-gettext fusil-mplayer fusil-zzuf fusil-ogg123 fusil-python fusil-php fusil-vlc fusil-libc-printf fusil-wizzard fusil-poppler fusil-gstreamer
 app-fuzz/fuzzdb,fuzzers,fuzzdb
 app-fuzz/fuzzer-server,fuzzers,fuzzer-server
-app-fuzz/http-fuzz,fuzzers,httpfuzz
+app-fuzz/http-fuzz,fuzzers,http-fuzz
 app-fuzz/ohrwurm,fuzzers,ohrwurm
 app-fuzz/protos,fuzzers,protos
 app-fuzz/scapy,fuzzers,scapy
 app-fuzz/slowhttptest,fuzzers,slowhttptest
-app-fuzz/smtp-fuzz,fuzzers,smtpfuzz
+app-fuzz/smtp-fuzz,fuzzers,smtp-fuzz
 app-fuzz/smudge,fuzzers,smudge
 app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
 app-fuzz/taof,fuzzers,taof
@@ -123,7 +123,7 @@ net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
 net-analyzer/ncrack,cracker,ncrack
 net-analyzer/nessus,scanner,nessus.desktop
-net-analyzer/netcat6,analyzer,netcat6
+net-analyzer/netcat6,analyzer,nc6
 net-analyzer/netdiscover,analyzer,netdiscover
 net-analyzer/netdude,analyzer,netdude.desktop
 net-analyzer/netmap,analyzer,netmap
@@ -143,9 +143,9 @@ net-analyzer/polenum,misc,polenum
 net-analyzer/ppscan,scanner,ppscan
 net-analyzer/rain,forging,rain,--help
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
-net-analyzer/set,exploit,social_engineering_toolkit
+net-analyzer/set,exploit,set-toolkit
 net-analyzer/siphon,footprint Fingerprint OS,siphon
-net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py svlearnfp.py
+net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py
 net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum
@@ -158,7 +158,7 @@ net-analyzer/subdomainer,footprint DNS,subdomainer.py
 net-analyzer/tcpdump,analyzer,tcpdump
 net-analyzer/tcpreplay,analyzer,tcpreplay
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
-net-analyzer/thc-ipv6,analyzer,thc-ipv6
+net-analyzer/thc-ipv6,analyzer thc-ipv6, address6 alive6 covert_send6 covert_send6d denial6 detect-new-ip6 detect_sniffer6 dnsdict6 dnsrevenum6 dos-new-ip6 dos_mld.sh dump_router6 exploit6 extract_hosts6.sh extract_networks6.sh fake_advertise6 fake_dhcps6 fake_dns6d fake_dnsupdate6 fake_mipv6 fake_mld26 fake_mld6 fake_mldrouter6 fake_router26 fake_router6 fake_solicitate6 flood_advertise6 flood_dhcpc6 flood_mld26 flood_mld6 flood_mldrouter6 flood_router26 flood_router6 flood_solicitate6 fragmentation6 fuzz_ip6 implementation6 implementation6d inverse_lookup6 kill_router6 ndpexhaust6 node_query6 parasite6 passive_discovery6 randicmp6 redir6 rsmurf6 sendpees6 sendpeesmp6 smurf6 thcping6 toobig6 trace6
 net-analyzer/thc-pptp-bruter,cracker,thc-pptp-bruter
 net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
@@ -236,7 +236,7 @@ net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.deskto
 net-wireless/bluemaho,bluetooth,bluemaho.desktop
 net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
-net-wireless/chirp,radio,chirp
+net-wireless/chirp,radio,chirpw
 net-wireless/cowpatty,wireless,cowpatty
 net-wireless/crda,wireless,crda
 net-wireless/gerix,wireless,gerix.desktop

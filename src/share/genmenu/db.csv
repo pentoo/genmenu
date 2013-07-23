@@ -249,7 +249,7 @@ net-wireless/gr-osmosdr,radio,gr-osmosdr
 net-wireless/haraldscan,bluetooth,haraldscan.py
 net-wireless/hostapd,wireless,hostapd
 net-wireless/karmetasploit,mitm,karmeta.sh
-net-wireless/karmetasploit,wireless,karmetasploit
+net-wireless/karmetasploit,wireless,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
 net-wireless/kismet-ubertooth,bluetooth,kismet-ubertooth
 net-wireless/mdk,wireless,mdk3

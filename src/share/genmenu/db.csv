@@ -176,7 +176,7 @@ net-analyzer/wapiti,scanner Http,wapiti
 net-analyzer/webshag,scanner Http,webshag.desktop
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/whatweb,footprint Http,whatweb
-net-analyzer/wireshark,analyzer,wireshark
+net-analyzer/wireshark,analyzer,wireshark.desktop
 net-analyzer/wolpertinger,scanner,wolpertinger
 net-analyzer/wpscan,scanner,wpscan
 net-analyzer/xplico,analyzer,xplico

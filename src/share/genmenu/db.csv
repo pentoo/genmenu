@@ -185,6 +185,7 @@ net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
 net-dialup/freeradius,wireless,freeradius
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop
+net-firewall/sanewall,misc,sanewall
 net-fs/winexe,exploit,winexe
 net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd

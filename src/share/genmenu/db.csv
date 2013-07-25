@@ -143,7 +143,7 @@ net-analyzer/polenum,misc,polenum
 net-analyzer/ppscan,scanner,ppscan
 net-analyzer/rain,forging,rain,--help
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
-net-analyzer/set,exploit,set-toolkit
+net-analyzer/set,exploit SET,se-toolkit set-web set-automate set-proxy
 net-analyzer/siphon,footprint Fingerprint OS,siphon
 net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py
 net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap

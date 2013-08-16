@@ -215,7 +215,7 @@ net-misc/tightvnc,misc,vncviewer
 net-misc/tinc,misc,tinc.desktop
 net-misc/tsclient,misc,tsclient.desktop
 net-misc/voipong,sip-voip,voipong
-net-misc/whatmask,misc,whatmask
+net-misc/whatmask,misc,whatmask,
 net-misc/whois,misc,whois
 net-misc/warvox,sip-voip,warvox-launcher
 net-nds/gq,analyzer,gq.desktop

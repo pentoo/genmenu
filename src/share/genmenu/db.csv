@@ -284,6 +284,7 @@ sys-devel/clang,mobile,clang
 sys-devel/gdb,rce,gdb
 sys-fs/dd-rescue,forensics,dd_rescue
 sys-fs/ddrescue,forensics,ddrescue
+www-apps/arachni,scanner,arachni
 www-apps/beef,exploit,beef
 x11-terms/rxvt-unicode,none,urxvt.desktop
 x11-terms/xterm,none,xterm.desktop

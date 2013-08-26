@@ -182,6 +182,7 @@ net-analyzer/wpscan,scanner,wpscan
 net-analyzer/xplico,analyzer,xplico
 net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
 net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
+net-analyzer/zmap,scanner,zmap
 net-dialup/freeradius,wireless,freeradius
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/fwbuilder,misc,fwbuilder.desktop

@@ -25,7 +25,7 @@ app-forensics/galleta,forensics,galleta
 app-forensics/inception,forensics,inception
 app-forensics/make-pdf,exploit amke-pdf,make-pdf-javascript make-pdf-embedded
 app-forensics/memdump,forensics,memdump
-app-forensics/origami,forensics origami,pdfwalker pdf2graph pdf2pdfa pdf2ruby pdfcocoon pdfcop pdfdecompress pdfdecrypt pdfencrypt pdfextract pdfmetadata pdfsh
+app-forensics/origami-pdf,forensics origami,pdfwalker pdf2graph pdf2pdfa pdf2ruby pdfcocoon pdfcop pdfdecompress pdfdecrypt pdfencrypt pdfextract pdfmetadata pdfsh
 app-forensics/pasco,forensics,pasco
 app-forensics/pdf-parser,forensics PDF,pdf-parser
 app-forensics/pdfid,forensics PDF,pdfid

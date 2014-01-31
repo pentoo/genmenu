@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=virtualradar
+Exec=/usr/bin/virtualradar
+Icon=/usr/share/genmenu/pixmaps/webscarab.png
+Type=Application

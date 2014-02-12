@@ -145,7 +145,7 @@ net-analyzer/rain,forging,rain,--help
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
 net-analyzer/set,exploit SET,setoolkit set-web set-automate set-proxy
 net-analyzer/siphon,footprint Fingerprint OS,siphon
-net-analyzer/sipvicious,sip-voip Sipvicious,svmap.py svreport.py svwar.py svcrack.py
+net-analyzer/sipvicious,sip-voip Sipvicious,svmap svreport svwar svcrack
 net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum

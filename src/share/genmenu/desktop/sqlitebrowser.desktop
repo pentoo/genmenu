@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=sqlitebrowser
+GenericName=
+Exec=sqlitebrowser
+Icon=/usr/share/genmenu/pixmaps/database.png
+Type=Application

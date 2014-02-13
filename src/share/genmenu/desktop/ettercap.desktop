@@ -3,6 +3,6 @@ Name=Ettercap
 GenericName=
 Exec=sudo -E /usr/bin/ettercap -G
 Type=Application
-Terminal=true
+Terminal=false
 Icon=/usr/share/genmenu/pixmaps/ettercap.png
 Categories=Pentoo;X-Mitm;

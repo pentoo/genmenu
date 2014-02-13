@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Nmap GUI
-Exec=nmapfe
+Exec=nmapsi4
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-StartupWMClass=Nmapfe
+StartupWMClass=nmapsi4
 Icon=/usr/share/genmenu/pixmaps/nmap-logo-64.png
 Type=Application

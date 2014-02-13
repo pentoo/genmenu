@@ -19,25 +19,25 @@ app-exploits/packetstormexploits,exploit,packetstormexploits.desktop
 app-exploits/shellstorm,exploit,shellstorm.py
 app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,forensics,cmospwd
-app-forensics/dff,forensics,dff,-g
+app-forensics/dff,forensics,dff.desktop
 app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
 app-forensics/inception,forensics,inception
 app-forensics/make-pdf,exploit amke-pdf,make-pdf-javascript make-pdf-embedded
 app-forensics/memdump,forensics,memdump
-app-forensics/origami-pdf,forensics origami,pdfwalker pdf2graph pdf2pdfa pdf2ruby pdfcocoon pdfcop pdfdecompress pdfdecrypt pdfencrypt pdfextract pdfmetadata pdfsh
+app-forensics/origami-pdf,forensics origami,pdfwalker.desktop pdf2graph pdf2pdfa pdf2ruby pdfcocoon pdfcop pdfdecompress pdfextract pdfsh
 app-forensics/pasco,forensics,pasco
 app-forensics/pdf-parser,forensics PDF,pdf-parser
 app-forensics/pdfid,forensics PDF,pdfid
-app-forensics/rdd,forensics,rdd
-app-forensics/sleuthkit,forensics Sleuthkit,blkcalc blkcat blkls blkstat ffind fls fsstat hfind icat ifind ils img_cat img_stat istat jcat jls mactime mmcat mmls mmstat sigfind sorter srch_strings tsk_comparedir tsk_gettimes tsk_loaddb tsk_recover
+app-forensics/rdd,forensics,rdd,--help
+app-forensics/sleuthkit,forensics Sleuthkit,mactime blkcalc blkcat blkls blkstat ffind fls fsstat hfind icat ifind ils img_cat img_stat istat jcat jls mmcat mmls mmstat sigfind sorter srch_strings tsk_comparedir tsk_gettimes tsk_loaddb tsk_recover,--help
 app-forensics/volatility,forensics,volatility
 app-forensics/libvshadow,forensics,vshadowinfo vshadowmount
 app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
 app-fuzz/bss,fuzzers,bss
 app-fuzz/fusil,fuzzers Fusil,fusil-firefox fusil-clamav fusil-imagemagick fusil-gettext fusil-mplayer fusil-zzuf fusil-ogg123 fusil-python fusil-php fusil-vlc fusil-libc-printf fusil-wizzard fusil-poppler fusil-gstreamer
-app-fuzz/fuzzdb,fuzzers,fuzzdb
+app-fuzz/fuzzdb,fuzzers,fuzzdb.desktop
 app-fuzz/fuzzer-server,fuzzers,fuzzer-server
 app-fuzz/http-fuzz,fuzzers,http-fuzz
 app-fuzz/ohrwurm,fuzzers,ohrwurm
@@ -53,14 +53,14 @@ app-misc/hivex,forensics Hivex,hivexget hivexml hivexregedit hivexsh
 app-pda/ideviceinstaller,mobile iDevice,ideviceinstaller
 app-pda/ifuse,mobile,ifuse
 app-pda/libimobiledevice,mobile iDevice,idevicebackup idevicedate ideviceenterrecovery ideviceimagemounter ideviceinfo idevicepair idevicescreenshot idevicesyslog
-app-text/cewl,cracker,cewl
+app-text/cewl,cracker,cewl,--help
 dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan
 dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
 dev-db/sqid,database,sqid.rb
 dev-db/sqlbf,database,sqlbf
 dev-db/sqlibf,database,sqlibf
-dev-db/sqlitebrowser,database,sqlitebrowser
+dev-db/sqlitebrowser,database,sqlitebrowser.desktop
 dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
 dev-java/jad-bin,rce,jad
@@ -69,7 +69,7 @@ dev-util/apktool,mobile,apktool
 dev-util/dex2jar,mobile,dex2jar
 dev-util/dissy,rce,dissy
 dev-util/edb,rce,edb.desktop
-dev-util/jd-gui-bin,mobile,jd-gui
+dev-util/jd-gui-bin,mobile,jd-gui.desktop
 dev-util/ltrace,rce,ltrace
 dev-util/insight,rce,insight
 dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
@@ -101,7 +101,7 @@ net-analyzer/fierce,footprint DNS,fierce.pl
 net-analyzer/firewalk,scanner,firewalk
 net-analyzer/fragroute,forging,fragroute
 net-analyzer/ftester,analyzer,ftest
-net-analyzer/geoedge,footprint Geolocation,geoedge.py
+net-analyzer/geoedge,footprint Geolocation,geoedge
 net-analyzer/gnome-nettool,analyzer,gnome-nettool.desktop
 net-analyzer/gspoof,forging,gspoof,-g
 net-analyzer/honeyd,misc,honeyd
@@ -117,8 +117,8 @@ net-analyzer/maketh,forging,maketh
 net-analyzer/mbrowse,analyzer,mbrowse
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
-net-analyzer/metagoofil,footprint Http,metagoofil.py
-net-analyzer/metasploit,exploit,msf-console.desktop armitage
+net-analyzer/metagoofil,footprint Http,metagoofil
+net-analyzer/metasploit,exploit,msf-console.desktop armitage.desktop
 net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
 net-analyzer/ncrack,cracker,ncrack
@@ -130,7 +130,8 @@ net-analyzer/netmap,analyzer,netmap
 net-analyzer/netwag,forging,netwag
 net-analyzer/ngrep,analyzer,ngrep
 net-analyzer/nikto,scanner Http,nikto
-net-analyzer/nmap,scanner,nmap.desktop
+net-analyzer/nmap,scanner,nmap,--help
+net-analyzer/nmapsi,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner Windows,nmbscan
 net-analyzer/ntop,analyzer,ntop.desktop
 net-analyzer/ntp-fingerprint,footprint Fingerprint Services,ntp-fingerprint
@@ -154,7 +155,7 @@ net-analyzer/sqlninja,database MSSQL,sqlninja
 net-analyzer/sslsniff,mitm,sslsniff
 net-analyzer/sslstrip,mitm,sslstrip
 net-analyzer/ssltest,analyzer,ssltest
-net-analyzer/subdomainer,footprint DNS,subdomainer.py
+net-analyzer/subdomainer,footprint DNS,subdomainer
 net-analyzer/tcpdump,analyzer,tcpdump
 net-analyzer/tcpreplay,analyzer,tcpreplay
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
@@ -173,7 +174,7 @@ net-analyzer/w3af,exploit,w3af_gui.desktop w3af_console
 net-analyzer/waffit,footprint Http,wafw00f.py
 net-analyzer/wafp,footprint Http,wafp
 net-analyzer/wapiti,scanner Http,wapiti
-net-analyzer/webshag,scanner Http,webshag.desktop
+net-analyzer/webshag,scanner Http,webshag_cli webshag.desktop
 net-analyzer/wfuzz,footprint Http,wfuzz
 net-analyzer/whatweb,footprint Http,whatweb
 net-analyzer/wireshark,analyzer,wireshark.desktop
@@ -181,9 +182,8 @@ net-analyzer/wolpertinger,scanner,wolpertinger
 net-analyzer/wpscan,scanner,wpscan
 net-analyzer/xplico,analyzer,xplico
 net-analyzer/xprobe,footprint Fingerprint OS,xprobe2
-net-analyzer/yersinia,exploit,yersinia-cmd.desktop yersinia-gui.desktop
+net-analyzer/yersinia,exploit,yersinia-gui.desktop yersinia-cmd.desktop
 net-analyzer/zmap,scanner,zmap
-net-dialup/freeradius,wireless,freeradius
 net-firewall/firehol,misc,firehol.desktop
 net-firewall/sanewall,misc,sanewall
 net-fs/winexe,exploit,winexe
@@ -225,13 +225,14 @@ net-proxy/3proxy,proxy,3proxy
 net-proxy/burpsuite,proxy,burpsuite.desktop
 net-proxy/httpush,proxy,httpush
 net-proxy/paros,proxy,paros.desktop
-net-proxy/privoxy-tor,proxy,privoxy-tor.desktop
-net-proxy/proxystrike,proxy,proxystrike-cli proxystrike-gui.desktop
+net-misc/vidalia,proxy,vidalia.desktop
+net-proxy/proxystrike,proxy,proxystrike-gui.desktop
 net-proxy/ratproxy,proxy,ratproxy ratproxy-report.sh
 net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
 net-proxy/zaproxy,proxy,zaproxy.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,--help
+net-wireless/n4p,wireless,n4p,n4p_iptables
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop
@@ -242,7 +243,6 @@ net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
 net-wireless/chirp,radio,chirp
 net-wireless/cowpatty,wireless,cowpatty
-net-wireless/crda,wireless,crda
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/fern-wifi-cracker,wireless,fern-wifi-cracker.desktop
@@ -254,13 +254,14 @@ net-wireless/hostapd,wireless,hostapd
 net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/karmetasploit,wireless,karmeta.sh
 net-wireless/kismet,wireless,kismet.desktop
-net-wireless/mdk,wireless,mdk3
+net-wireless/mdk,wireless,mdk3,--help
 net-wireless/multimode,radio,multimode
 net-wireless/orinoco-fwutils,wireless,orinoco-fwutils
 net-wireless/reaver,wireless,reaver
+add net-wireless/ska,wireless,ska
 net-wireless/rfkill,wireless,rfkill
 net-wireless/rtl-sdr,radio,rtl_adsb rtl_eeprom rtl_fm rtl_power rtl_sdr rtl_tcp rtl_test
-net-wireless/spectools,wireless,spectool_curses spectool_net
+net-wireless/spectools,wireless,spectool_curses spectool_net spectool_gtk spectool_raw
 net-wireless/ubertooth,bluetooth,ubertooth-dump ubertooth-dfu ubertooth-uap ubertooth-hop ubertooth-specan-ui ubertooth-btle ubertooth-lap ubertooth-util
 net-wireless/uhd,radio,uhd
 net-wireless/virtualradar-bin,radio,virtualradar.desktop
@@ -275,12 +276,12 @@ net-wireless/wifitap,wireless,wifitap
 net-www/apache,misc,apache.desktop
 sci-geosciences/gpsd,wireless,gpsd
 sys-apps/dcfldd,forensics,dcfldd,--help
-sys-devel/clang,mobile,clang
+sys-devel/clang,mobile,clang,--help
 sys-devel/gdb,rce,gdb
 sys-fs/dd-rescue,forensics,dd_rescue
 sys-fs/ddrescue,forensics,ddrescue
 sys-libs/cracklib,cracker,dictionary.desktop
-www-apps/arachni,scanner,arachni
+www-apps/arachni,scanner,arachni.desktop
 www-apps/beef,exploit,beef
 x11-terms/rxvt-unicode,none,urxvt.desktop
 x11-terms/xterm,none,xterm.desktop

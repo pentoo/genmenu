@@ -243,6 +243,7 @@ net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
 net-wireless/chirp,radio,chirp
 net-wireless/cowpatty,wireless,cowpatty
+net-wireless/crackle,bluetooth,crackle
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/fern-wifi-cracker,wireless,fern-wifi-cracker.desktop

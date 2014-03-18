@@ -67,7 +67,7 @@ dev-java/jad-bin,rce,jad
 dev-lang/nasm,rce,nasm
 dev-util/apktool,mobile,apktool
 dev-util/dex2jar,mobile,dex2jar
-dev-util/dissy,rce,dissy
+dev-util/emilpro,rce,emilpro
 dev-util/edb,rce,edb.desktop
 dev-util/jd-gui-bin,mobile,jd-gui.desktop
 dev-util/ltrace,rce,ltrace

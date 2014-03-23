@@ -77,7 +77,6 @@ dev-util/radare,rce,gradare.desktop
 dev-util/radare2,rce,radare2
 dev-util/skipfish,scanner,skipfish
 dev-util/strace,rce,strace
-media-radio/fldigi,radio,fldigi
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst
@@ -232,7 +231,7 @@ net-proxy/webscarab,proxy,webscarab.desktop
 net-proxy/tsocks,proxy,tsocks
 net-proxy/zaproxy,proxy,zaproxy.desktop
 net-wireless/aircrack-ng,wireless Aircrack-ng,makeivs-ng ivstools airdecap-ng airolib-ng aircrack-ng airdecloak-ng buddy-ng packetforge-ng tkiptun-ng airmon-ng airtun-ng airbase-ng airdriver-ng aireplay-ng wesside-ng airserv-ng airodump-ng easside-ng,--help
-net-wireless/n4p,wireless,n4p,n4p_iptables
+net-wireless/n4p,wireless,n4p
 net-wireless/airoscript,wireless,airoscript
 net-wireless/airpwn,wireless,airpwn
 net-wireless/airsnort,wireless,airsnort.desktop
@@ -241,31 +240,24 @@ net-wireless/athload,wireless Drivers,switch2ath5k.desktop switch2madwifi.deskto
 net-wireless/bluemaho,bluetooth,bluemaho.desktop
 net-wireless/bt-audit,bluetooth,psm_scan rfcomm_scan
 net-wireless/btscanner,bluetooth,btscanner
-net-wireless/chirp,radio,chirp
 net-wireless/cowpatty,wireless,cowpatty
 net-wireless/crackle,bluetooth,crackle
 net-wireless/gerix,wireless,gerix.desktop
 net-wireless/gkismet,wireless,gkismet.desktop gkismetauto.desktop
 net-wireless/fern-wifi-cracker,wireless,fern-wifi-cracker.desktop
 net-wireless/gnome-bluetooth,bluetooth,gnome-bluetooth.desktop
-net-wireless/gr-air-modes,radio,gr-air-modes
-net-wireless/gr-baz,radio,gr-baz
 net-wireless/haraldscan,bluetooth,haraldscan.py
 net-wireless/hostapd,wireless,hostapd
 net-wireless/karmetasploit,mitm,karmeta.sh
 net-wireless/karmetasploit,wireless,karmeta.sh
-net-wireless/kismet,wireless,kismet.desktop
+net-wireless/kismet,wireless,kismet
 net-wireless/mdk,wireless,mdk3,--help
-net-wireless/multimode,radio,multimode
 net-wireless/orinoco-fwutils,wireless,orinoco-fwutils
 net-wireless/reaver,wireless,reaver
-add net-wireless/ska,wireless,ska
+net-wireless/ska,wireless,ska
 net-wireless/rfkill,wireless,rfkill
-net-wireless/rtl-sdr,radio,rtl_adsb rtl_eeprom rtl_fm rtl_power rtl_sdr rtl_tcp rtl_test
 net-wireless/spectools,wireless,spectool_curses spectool_net spectool_gtk spectool_raw
 net-wireless/ubertooth,bluetooth,ubertooth-dump ubertooth-dfu ubertooth-uap ubertooth-hop ubertooth-specan-ui ubertooth-btle ubertooth-lap ubertooth-util
-net-wireless/uhd,radio,uhd
-net-wireless/virtualradar-bin,radio,virtualradar.desktop
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect
 net-wireless/wepattack,wireless,wepattack
@@ -286,3 +278,9 @@ www-apps/arachni,scanner,arachni.desktop
 www-apps/beef,exploit,beef
 x11-terms/rxvt-unicode,none,urxvt.desktop
 x11-terms/xterm,none,xterm.desktop
+media-radio/fldigi,radio,fldigi
+net-wireless/gr-baz,radio,gr-baz
+net-wireless/virtualradar-bin,radio,virtualradar.desktop
+net-wireless/multimode,radio,multimode.desktop
+net-wireless/gr-air-modes,radio,modes_rx
+net-wireless/rtl-sdr,radio,rtl_adsb rtl_eeprom rtl_fm rtl_power rtl_sdr rtl_tcp rtl_test

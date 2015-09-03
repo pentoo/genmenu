@@ -125,12 +125,12 @@ def getHomeDir():
     else: return path1
 
 HOME = getHomeDir()
-if systemwide:
-  ICONDIR = HOME + '/usr/local/share/applications/'
-  LOCALDIR = HOME + '/usr/local/share/desktop-directories/'
-else:
-  ICONDIR = HOME + '/.local/share/applications/'
-  LOCALDIR = HOME + '/.local/share/desktop-directories/'
+#if systemwide:
+#  ICONDIR = HOME + '/usr/local/share/applications/'
+#  LOCALDIR = HOME + '/usr/local/share/desktop-directories/'
+#else:
+ICONDIR = HOME + '/.local/share/applications/'
+LOCALDIR = HOME + '/.local/share/desktop-directories/'
 
 def readcsv():
     '''Reads the db from the csv file'''
@@ -519,8 +519,8 @@ if __name__ == "__main__":
                       help="Create menu entries for XFCE")
     parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
                       help="Create menu entries for KDE4")
-    parser.add_option("-s", "--system", action="store_true", systemwide=True, default=False,
-                      help="Install menus system wide (defaults to current user)")
+#    parser.add_option("-s", "--system", action="store_true", systemwide=True, default=False,
+#                      help="Install menus system wide (defaults to current user)")
     (options, args) = parser.parse_args()
 
     try:

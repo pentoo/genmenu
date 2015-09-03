@@ -125,8 +125,12 @@ def getHomeDir():
     else: return path1
 
 HOME = getHomeDir()
-ICONDIR = HOME + '/.local/share/applications/'
-LOCALDIR = HOME + '/.local/share/desktop-directories/'
+if systemwide:
+  ICONDIR = HOME + '/usr/local/share/applications/'
+  LOCALDIR = HOME + '/usr/local/share/desktop-directories/'
+else:
+  ICONDIR = HOME + '/.local/share/applications/'
+  LOCALDIR = HOME + '/.local/share/desktop-directories/'
 
 def readcsv():
     '''Reads the db from the csv file'''
@@ -170,7 +174,7 @@ def listpackages(pkgdir):
             packages.append(category + "/" + re.sub("-[0-9].*", "", application, 1))
     packages.sort()
     return packages
- 
+
 def settermenv():
     """This function creates the apropriate environment variable for the $E17TERM"""
     file = open(ENVDIR + "99pentoo-term" , "w")
@@ -196,7 +200,7 @@ def find_menu_entry(menu, submenu, option=None):
                 if not option == None:
                     return find_option(x.getparent(), option)
                 else:
-                    return x.getparent() 
+                    return x.getparent()
             else:
                 tmp = find_menu_entry(x, submenu, option)
                 if not tmp == None:
@@ -515,6 +519,8 @@ if __name__ == "__main__":
                       help="Create menu entries for XFCE")
     parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
                       help="Create menu entries for KDE4")
+    parser.add_option("-s", "--system", action="store_true", systemwide=True, default=False,
+                      help="Install menus system wide (defaults to current user)")
     (options, args) = parser.parse_args()
 
     try:

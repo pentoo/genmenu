@@ -2,5 +2,5 @@
 Name=Multimode
 Type=Application
 Exec=/bin/sh -c "/usr/bin/launch '/usr/lib/uhd' 'bash -l'"
-Icon=/usr/share/genmenu/pixmaps/rce.png
+Icon=rce
 Terminal=true

@@ -8,5 +8,5 @@ Terminal=false
 GenericName=
 Version=1.0
 Type=Directory
-Icon=/usr/share/genmenu/pixmaps/wireless.png
+Icon=wireless
 

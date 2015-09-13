@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=Man In The Middle
-Icon=/usr/share/genmenu/pixmaps/mitm.png
+Icon=mitm
 Type=Directory
 Name=MITM
 Encoding=UTF-8

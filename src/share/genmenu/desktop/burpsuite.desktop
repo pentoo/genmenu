@@ -2,5 +2,5 @@
 Name=Burpsuite
 GenericName=
 Exec=burpsuite
-Icon=/usr/share/genmenu/pixmaps/proxy.png
+Icon=proxy
 Type=Application

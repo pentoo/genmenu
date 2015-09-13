@@ -3,7 +3,7 @@
 Name=Vidalia
 GenericName=
 Exec=vidalia
-Icon=/usr/share/genmenu/pixmaps/proxy.png
+Icon=proxy
 Type=Application
 Terminal=false
 Categories=Pentoo;X-Proxy;

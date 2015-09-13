@@ -8,4 +8,4 @@ Terminal=false
 GenericName=
 Version=1.0
 X-GNOME-DocPath=
-Icon=/usr/share/genmenu/pixmaps/cracker.png
+Icon=cracker

@@ -1,5 +1,5 @@
 [Desktop Entry]
-Icon=/usr/share/genmenu/pixmaps/sip-voip.png
+Icon=sip-voip
 Type=Directory
 Name=SIP / VoIP
 Encoding=UTF-8

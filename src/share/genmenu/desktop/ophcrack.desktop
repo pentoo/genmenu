@@ -2,5 +2,5 @@
 Name=Ophcrack
 GenericName=
 Exec=ophcrack
-Icon=/usr/share/genmenu/pixmaps/cracker.png
+Icon=cracker
 Type=Application

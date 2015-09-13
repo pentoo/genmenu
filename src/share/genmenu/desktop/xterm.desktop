@@ -9,5 +9,5 @@ StartupWMClass=xterm
 GenericName=xterm
 Name=xterm
 Terminal=false
-Icon=/usr/share/genmenu/pixmaps/term.png
+Icon=term
 Categories=GTK;Utility;Terminal;

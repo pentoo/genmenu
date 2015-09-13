@@ -4,5 +4,5 @@ GenericName=
 Exec=gerix
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/wireless.png
+Icon=wireless
 Type=Application

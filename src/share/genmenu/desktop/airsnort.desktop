@@ -4,5 +4,5 @@ Exec=airsnort
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 StartupWMClass=Airsnort
-Icon=/usr/share/genmenu/pixmaps/airsnort.png
+Icon=airsnort
 Type=Application

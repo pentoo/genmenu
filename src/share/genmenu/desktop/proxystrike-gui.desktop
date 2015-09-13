@@ -2,5 +2,5 @@
 Name=Proxystrike-gui
 GenericName=
 Exec=proxystrike-gui 
-Icon=/usr/share/genmenu/pixmaps/proxy.png
+Icon=proxy
 Type=Application

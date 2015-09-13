@@ -2,6 +2,6 @@
 Name=Hydra GUI
 GenericName=
 Exec=/usr/bin/xhydra
-Icon=/usr/share/genmenu/pixmaps/thc.png
+Icon=thc
 Type=Application
 

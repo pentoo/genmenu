@@ -2,5 +2,5 @@
 Name=Hashcat GUI
 GenericName=
 Exec=/usr/bin/hashcat-gui
-Icon=/usr/share/genmenu/pixmaps/cracker.png
+Icon=cracker
 Type=Application

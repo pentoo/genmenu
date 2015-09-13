@@ -3,5 +3,5 @@ Name=DriftNet
 Exec=driftnet
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/image-viewer.png
+Icon=image-viewer
 Type=Application

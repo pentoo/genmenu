@@ -4,6 +4,6 @@ GenericName=curses, autoconfigured
 Exec=sudo -E /etc/init.d/firehol start
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/administration.png
+Icon=administration
 Type=Application
 Terminal=true

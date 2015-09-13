@@ -2,6 +2,6 @@
 Name=arachni
 GenericName=
 Exec=/bin/sh -c "/usr/bin/launch '/usr/sbin/arachni' '--help' 'sudo -s'"
-Icon=/usr/share/genmenu/pixmaps/scanner.png
+Icon=scanner
 Type=Application
 Terminal=true

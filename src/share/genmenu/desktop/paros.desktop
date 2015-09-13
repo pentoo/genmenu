@@ -3,5 +3,5 @@ Name=Paros
 Exec=P2TERM -e paros
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-Icon=/usr/share/genmenu/pixmaps/paros.png
+Icon=paros
 Type=Application

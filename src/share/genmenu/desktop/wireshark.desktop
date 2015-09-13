@@ -2,6 +2,6 @@
 Name=Wireshark
 GenericName=
 Exec=wireshark
-Icon=/usr/share/genmenu/pixmaps/analyzer.png
+Icon=analyzer
 Type=Application
 Categories=Pentoo;X-Analyzer;

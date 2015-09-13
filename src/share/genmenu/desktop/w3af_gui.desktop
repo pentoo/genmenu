@@ -2,5 +2,5 @@
 Name=W3af_gui
 GenericName=
 Exec=w3af_gui 
-Icon=/usr/share/genmenu/pixmaps/exploit.png
+Icon=exploit
 Type=Application

@@ -4,5 +4,5 @@ GenericName=
 Exec=sudo -E /usr/bin/ettercap -G
 Type=Application
 Terminal=false
-Icon=/usr/share/genmenu/pixmaps/ettercap.png
+Icon=ettercap
 Categories=Pentoo;X-Mitm;

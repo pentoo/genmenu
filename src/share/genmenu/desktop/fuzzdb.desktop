@@ -2,5 +2,5 @@
 Name=fuzzdb
 Type=Application
 Exec=/bin/sh -c "/usr/bin/launch 'ls' '-al /usr/share/fuzzdb/' 'bash -l'"
-Icon=/usr/share/genmenu/pixmaps/fuzzers.png
+Icon=fuzzers
 Terminal=true

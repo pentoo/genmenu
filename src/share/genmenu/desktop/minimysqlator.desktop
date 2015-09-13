@@ -2,5 +2,5 @@
 Name=Minimysqlator
 GenericName=
 Exec=minimysqlator
-Icon=/usr/share/genmenu/pixmaps/database.png
+Icon=database
 Type=Application

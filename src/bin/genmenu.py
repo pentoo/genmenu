@@ -259,7 +259,7 @@ def create_menu_entry(name, category, comments = ""):
     '''This function creates a simple .directory entry'''
     me = directoryfile()
     me.setName(name.capitalize())
-    me.setIcon(category + ".png")
+    me.setIcon(category)
     me.setComment(comments)
     return me
 
@@ -267,7 +267,7 @@ def create_desktop_entry(name, category, binname, params, genname):
     '''This function creates a simple .desktop entry'''
     de = desktopfile()
     de.setName(name.capitalize())
-    de.setIcon(category + ".png")
+    de.setIcon(category)
     de.setGenName(genname)
     if options.p2term == "Terminal":
         de.setExec(options.p2term + ' -e "launch ' + binname + ' ' + params + '"')

@@ -256,7 +256,7 @@ net-wireless/reaver,wireless,reaver
 net-wireless/ska,wireless,ska
 net-wireless/rfkill,wireless,rfkill
 net-wireless/spectools,wireless,spectool_curses spectool_net spectool_gtk
-net-wireless/ubertooth,bluetooth,ubertooth-dump ubertooth-dfu ubertooth-uap ubertooth-hop ubertooth-specan-ui ubertooth-btle ubertooth-lap ubertooth-util
+net-wireless/ubertooth,bluetooth ubertooth,ubertooth-btle ubertooth-debug ubertooth-dfu ubertooth-dump ubertooth-ego ubertooth-follow ubertooth-rx ubertooth-scan ubertooth-specan ubertooth-specan-ui ubertooth-util
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect
 net-wireless/wepattack,wireless,wepattack

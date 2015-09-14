@@ -31,7 +31,7 @@ class directoryfile:
     Header = "[Desktop Entry]"
     Name = "Name="
     Comment = "Comment="
-    Icon = "Icon=/usr/share/pixmaps/"
+    Icon = "Icon="
     Type = "Type=Directory"
 
     def setName(self, Name):
@@ -63,7 +63,7 @@ class desktopfile:
     Name = "Name="
     GenName = "GenericName="
     Exec = "Exec="
-    Icon = "Icon=/usr/share/pixmaps/"
+    Icon = "Icon="
     Type = "Type=Application"
     Terminal = "Terminal="
     Categories = "Categories=Pentoo;"

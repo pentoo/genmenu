@@ -255,7 +255,7 @@ net-wireless/orinoco-fwutils,wireless,orinoco-fwutils
 net-wireless/reaver,wireless,reaver
 net-wireless/ska,wireless,ska
 net-wireless/rfkill,wireless,rfkill
-net-wireless/spectools,wireless,spectool_curses spectool_net spectool_gtk spectool_raw
+net-wireless/spectools,wireless,spectool_curses spectool_net spectool_gtk
 net-wireless/ubertooth,bluetooth,ubertooth-dump ubertooth-dfu ubertooth-uap ubertooth-hop ubertooth-specan-ui ubertooth-btle ubertooth-lap ubertooth-util
 net-wireless/wavemon,wireless,wavemon.desktop
 net-wireless/waveselect,wireless,waveselect

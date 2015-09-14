@@ -158,7 +158,7 @@ net-analyzer/subdomainer,footprint DNS,subdomainer
 net-analyzer/tcpdump,analyzer,tcpdump
 net-analyzer/tcpreplay,analyzer,tcpreplay
 net-analyzer/tcptraceroute,analyzer,tcptraceroute
-net-analyzer/thc-ipv6,analyzer, thc-ipv6, address6 alive6 covert_send6 covert_send6d denial6 detect-new-ip6 detect_sniffer6 dnsdict6 dnsrevenum6 dos-new-ip6 dos_mld.sh dump_router6 exploit6 extract_hosts6.sh extract_networks6.sh fake_advertise6 fake_dhcps6 fake_dns6d fake_dnsupdate6 fake_mipv6 fake_mld26 fake_mld6 fake_mldrouter6 fake_router26 fake_router6 fake_solicitate6 flood_advertise6 flood_dhcpc6 flood_mld26 flood_mld6 flood_mldrouter6 flood_router26 flood_router6 flood_solicitate6 fragmentation6 fuzz_ip6 implementation6 implementation6d inverse_lookup6 kill_router6 ndpexhaust6 node_query6 parasite6 passive_discovery6 randicmp6 redir6 rsmurf6 sendpees6 sendpeesmp6 smurf6 thcping6 toobig6 trace6
+net-analyzer/thc-ipv6,analyzer thc-ipv6, address6 alive6 covert_send6 covert_send6d denial6 detect-new-ip6 detect_sniffer6 dnsdict6 dnsrevenum6 dos-new-ip6 dos_mld.sh dump_router6 exploit6 extract_hosts6.sh extract_networks6.sh fake_advertise6 fake_dhcps6 fake_dns6d fake_dnsupdate6 fake_mipv6 fake_mld26 fake_mld6 fake_mldrouter6 fake_router26 fake_router6 fake_solicitate6 flood_advertise6 flood_dhcpc6 flood_mld26 flood_mld6 flood_mldrouter6 flood_router26 flood_router6 flood_solicitate6 fragmentation6 fuzz_ip6 implementation6 implementation6d inverse_lookup6 kill_router6 ndpexhaust6 node_query6 parasite6 passive_discovery6 randicmp6 redir6 rsmurf6 sendpees6 sendpeesmp6 smurf6 thcping6 toobig6 trace6
 net-analyzer/thc-pptp-bruter,cracker,thc-pptp-bruter
 net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py

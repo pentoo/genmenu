@@ -1,7 +1,7 @@
 <!DOCTYPE Menu  PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
 <Menu><Name>Applications</Name><MergeFile type="parent">/etc/xdg/menus/xfce-applications.menu</MergeFile>
 
-<Menu><Name>Pentoo</Name><Directory>Pentoo.directory</Directory></Menu>
+<Menu><Name>Pentoo</Name><Directory>Pentoo.directory</Directory><Include><Category>X-Folders</Category></Include></Menu>
 
 <Layout>
   <Filename>xfce4-run.desktop</Filename>

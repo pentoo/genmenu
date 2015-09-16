@@ -1,10 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=xfce4-terminal
-Icon=terminal
+Exec=sudo /usr/sbin/toggle_hardened
+Icon=changes-allow
 StartupNotify=false
 Categories=X-Folders;
 OnlyShowIn=XFCE
-Name=Terminal
-Comment=xfce4-terminal
+Name=toggle_hardened
+Comment={En,Dis}able PaX softmode
+Terminal=false
+Path=/tmp

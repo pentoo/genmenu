@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xfce4-terminal
+Icon=terminal
+StartupNotify=false
+Categories=X-Folders;
+OnlyShowIn=XFCE
+Name=Terminal
+Comment=xfce4-terminal

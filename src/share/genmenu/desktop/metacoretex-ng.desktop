@@ -3,5 +3,5 @@ Name=MetaCoretex-NG
 Exec=mctx
 StartupNotify=false
 X-Enlightenment-WaitExit=false
-Icon=scan.gif
+Icon=scan
 Type=Application

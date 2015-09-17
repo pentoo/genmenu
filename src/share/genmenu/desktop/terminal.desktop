@@ -5,13 +5,13 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=sudo /usr/sbin/toggle_hardened
-Icon=changes-allow
+Exec=xfce4-terminal
+Icon=utilities-terminal
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Categories=X-Folders;
 OnlyShowIn=XFCE
-Name=toggle_hardened
-Comment={En,Dis}able PaX softmode
+Name=Terminal
+Comment=Terminal Emulator
 Terminal=False
 Path=/tmp

@@ -10,6 +10,7 @@ Icon=changes-allow
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Categories=X-Folders;
+OnlyShowIn=XFCE
 Name=toggle_hardened
 Comment={En,Dis}able PaX softmode
 Terminal=False

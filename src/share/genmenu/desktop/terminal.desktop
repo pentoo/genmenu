@@ -1,3 +1,7 @@
+#DANGER DANGER DANGER
+#SOME KIND OF BLACK MAGIC REQUIRES
+#THIS FILE TO BE CALLED terminal.desktop
+#OR THE WHOLE MOTHERFUCKING MENU BREAKS
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -8,3 +12,5 @@ X-Enlightenment-WaitExit=false
 Categories=X-Folders;
 Name=toggle_hardened
 Comment={En,Dis}able PaX softmode
+Terminal=False
+Path=/tmp

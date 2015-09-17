@@ -440,7 +440,7 @@ def main():
                         genname = ""
                     make_menu_entry(root_menu, db[y][2], db[y][1], params, genname)
                 except:
-                    print >> sys.stderr, "!!! Unable to generate entry for " + db[y][0] + "please report this to grimmlin@pentoo.ch"
+                    print >> sys.stderr, "!!! Unable to generate entry for " + db[y][0] + "please report this to https://github.com/pentoo/genmenu/issues"
                     pass
         else:
             notthere.append(db[y][0])

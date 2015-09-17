@@ -488,6 +488,20 @@ def main():
             sys.stderr.write("Unable to copy " + directory_entry_file + " to " + LOCALDIR + "\n")
             sys.stderr.write("Verify that you have write permissions in " + LOCALDIR + "\n")
             return -1
+        directory_entry_file = "Pentoo.directory"
+        file = os.path.join(LOCALDIR, directory_entry_file)
+
+	#FUCKME, why is this even needed?
+	if options.xfce:
+        	magic_menu_entry_file = "terminal.desktop"
+	        file = os.path.join(ICONDIR, magic_menu_entry_file)
+	        try:
+	            if os.path.exists(os.path.join(APPSDIR, magic_menu_entry_file)):
+	                shutil.copyfile(os.path.join(APPSDIR, magic_menu_entry_file), file)
+	        except:
+	            sys.stderr.write("Unable to copy " + magic_menu_entry_file + " to " + ICONDIR + "\n")
+	            sys.stderr.write("Verify that you have write permissions in " + ICONDIR + "\n")
+	            return -1
 
         sys.exit()
 

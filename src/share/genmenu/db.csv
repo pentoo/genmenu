@@ -130,6 +130,8 @@ net-analyzer/netwag,forging,netwag
 net-analyzer/ngrep,analyzer,ngrep
 net-analyzer/nikto,scanner Http,nikto
 net-analyzer/nmap,scanner,nmap,--help
+net-analyzer/nmap,scanner,zenmap.desktop
+net-analyzer/nmap,scanner,zenmap-root.desktop
 net-analyzer/nmapsi,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner Windows,nmbscan
 net-analyzer/ntop,analyzer,ntop.desktop

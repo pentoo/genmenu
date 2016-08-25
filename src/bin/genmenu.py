@@ -503,7 +503,7 @@ def main():
 	            sys.stderr.write("Verify that you have write permissions in " + ICONDIR + "\n")
 	            return -1
 
-        if HOME != "/root"
+        if HOME != "/root":
             print "Warning, your user should be in the wheel group or some menus will not work"
         sys.exit()
 

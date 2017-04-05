@@ -545,9 +545,9 @@ if __name__ == "__main__":
                       help="Create menu entries for E17")
     parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
                       help="Create menu entries for XFCE")
-    parser.add_option("-k4", "--kde4", action="store_true", dest="kde4", default=False,
+    parser.add_option("-4", "--kde4", action="store_true", dest="kde4", default=False,
                       help="Create menu entries for KDE4")
-    parser.add_option("-k", "--kde", action="store_true", dest="kde5", default=False,
+    parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
                       help="Create menu entries for KDE Plasma")
 #    parser.add_option("-s", "--system", action="store_true", systemwide=True, default=False,
 #                      help="Install menus system wide (defaults to current user)")

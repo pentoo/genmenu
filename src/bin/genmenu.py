@@ -248,6 +248,11 @@ def add_menu_entry(root_menu, root_category, category):
             new_category_entry = etree.SubElement(new_add_entry, "Category")
             new_category_entry.text = "X-" + category.capitalize()
 
+        if options.kde4:
+            new_add_entry = etree.SubElement(new_include_entry, "And")
+            new_category_entry = etree.SubElement(new_add_entry, "Category")
+            new_category_entry.text = "X-" + category.capitalize()
+
         return new_menu_entry
 
 def append_desktop_entry(menu, iconfile):
@@ -339,7 +344,6 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
                 sys.stderr.write("File " + file + "does not exists \n")
                 return -1
         if not category == 'none':
-#            if not options.kde:
                 append_desktop_entry(menu, iconfile)
         if options.vverbose:
             print etree.tostring(root_menu, pretty_print=True)
@@ -363,8 +367,11 @@ def genxml(root_menu, configdir):
     if options.xfce:
         mymenu = open(configdir + '/xfce-applications.menu', "w")
         mymenu.write(etree.tostring(root_menu, pretty_print=True))
-    if options.kde:
+    if options.kde4:
         mymenu = open(configdir + '/kde-4-applications.menu', "w")
+        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+    if options.kde:
+        mymenu = open(configdir + '/kf5-applications.menu', "w")
         mymenu.write(etree.tostring(root_menu, pretty_print=True))
     else:
         mymenu = open(configdir + '/applications.menu', "w")
@@ -376,6 +383,9 @@ def main():
     This program is used to generate the menu in enlightenment for the pentoo livecd
     '''
     if options.xfce:
+        if os.path.exists(ICONDIR):
+            wipeXfceIconDir()
+    if options.kde4:
         if os.path.exists(ICONDIR):
             wipeXfceIconDir()
     if options.kde:
@@ -410,8 +420,10 @@ def main():
         menu = etree.parse(os.path.join(BASEDIR, "lib", "pentoo.menu"))
     elif options.xfce:
         menu = etree.parse(os.path.join(BASEDIR, "lib", "xfce-applications.menu"))
-    elif options.kde:
+    elif options.kde4:
         menu = etree.parse(os.path.join(BASEDIR, "lib", "kde-4-applications.menu"))
+    elif options.kde:
+        menu = etree.parse(os.path.join(BASEDIR, "lib", "kf5-applications.menu"))
     else:
         menu = etree.parse(os.path.join(BASEDIR, "lib", "applications.menu"))
 
@@ -533,8 +545,10 @@ if __name__ == "__main__":
                       help="Create menu entries for E17")
     parser.add_option("-x", "--xfce", action="store_true", dest="xfce", default=False,
                       help="Create menu entries for XFCE")
-    parser.add_option("-k", "--kde", action="store_true", dest="kde", default=False,
+    parser.add_option("-k4", "--kde4", action="store_true", dest="kde4", default=False,
                       help="Create menu entries for KDE4")
+    parser.add_option("-k", "--kde", action="store_true", dest="kde5", default=False,
+                      help="Create menu entries for KDE Plasma")
 #    parser.add_option("-s", "--system", action="store_true", systemwide=True, default=False,
 #                      help="Install menus system wide (defaults to current user)")
     (options, args) = parser.parse_args()

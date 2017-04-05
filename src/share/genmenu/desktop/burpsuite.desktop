@@ -2,5 +2,5 @@
 Name=Burpsuite
 GenericName=
 Exec=burpsuite
-Icon=proxy
+Icon=burpsuite
 Type=Application

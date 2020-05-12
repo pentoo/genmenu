@@ -192,7 +192,6 @@ net-fs/winexe,exploit,winexe
 net-ftp/ftpd,misc,ftpd.desktop
 net-ftp/oftpd,misc,oftpd
 net-irc/irssi,none,irssi,--help
-net-libs/libbtbb,bluetooth,libbtbb
 net-misc/bridge-utils,mitm,brctl
 net-misc/curl,misc,curl
 net-misc/dhcpcd,misc,dhcpcd
@@ -279,7 +278,6 @@ net-wireless/wifite,wireless,wifite
 net-www/apache,misc,apache.desktop
 sci-geosciences/gpsd,wireless,gpsd
 sys-apps/dcfldd,forensics,dcfldd,--help
-sys-devel/clang,mobile,clang,--help
 sys-devel/gdb,rce,gdb
 sys-fs/dd-rescue,forensics,dd_rescue
 sys-fs/ddrescue,forensics,ddrescue

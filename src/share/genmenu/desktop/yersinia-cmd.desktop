@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Yersinia
 GenericName=cli
-Exec=P2TERM -e launch yersinia -h
+Exec=/bin/sh -c "/usr/bin/launch '/usr/bin/yersinia' '-h' 'bash -l'"
 StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=exploit

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Inception
+Exec=/bin/sh -c "/usr/bin/launch 'incept' '-h' 'bash -l'"
+Icon=forensics
+Type=Application

@@ -3,3 +3,4 @@ Name=Dex2jar
 Exec=/bin/sh -c "/usr/bin/launch 'd2j-dex2jar.sh' '-h' 'bash -l'"
 Icon=mobile
 Type=Application
+Terminal=true

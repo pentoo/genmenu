@@ -3,3 +3,4 @@ Name=Svmap
 Exec=/bin/sh -c "/usr/bin/launch 'sipvicious_svmap' '-h' 'bash -l'"
 Icon=sip-voip
 Type=Application
+Terminal=true

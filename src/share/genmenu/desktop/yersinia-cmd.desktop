@@ -6,3 +6,4 @@ StartupNotify=false
 X-Enlightenment-WaitExit=false
 Icon=exploit
 Type=Application
+Terminal=true

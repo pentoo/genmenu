@@ -22,7 +22,7 @@ app-forensics/cmospwd,forensics,cmospwd
 app-forensics/dff,forensics,dff.desktop
 app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
-app-forensics/inception,forensics,inception
+app-forensics/inception,forensics,inception.desktop
 app-forensics/libvshadow,forensics,vshadowinfo vshadowmount
 app-forensics/make-pdf,exploit amke-pdf,make-pdf-javascript make-pdf-embedded
 app-forensics/memdump,forensics,memdump
@@ -66,7 +66,7 @@ dev-db/sqlmap,database,sqlmap
 dev-java/jad-bin,rce,jad
 dev-lang/nasm,rce,nasm
 dev-util/apktool,mobile,apktool
-dev-util/dex2jar,mobile,dex2jar
+dev-util/dex2jar,mobile,dex2jar.desktop
 dev-util/edb,rce,edb.desktop
 dev-util/emilpro,rce,emilpro
 dev-util/insight,rce,insight
@@ -148,7 +148,7 @@ net-analyzer/rain,forging,rain,--help
 net-analyzer/scanssh,footprint Fingerprint Services,scanssh
 net-analyzer/set,exploit SET,setoolkit set-web set-automate set-proxy
 net-analyzer/siphon,footprint Fingerprint OS,siphon
-net-analyzer/sipvicious,sip-voip Sipvicious,svmap svreport svwar svcrack
+net-analyzer/sipvicious,sip-voip Sipvicious,svmap.desktop svreport.desktop svwar.desktop svcrack.desktop
 net-analyzer/smtpmap,footprint Fingerprint Services,smtpmap
 net-analyzer/sniffit,analyzer,sniffit
 net-analyzer/snmpenum,analyzer,snmpenum

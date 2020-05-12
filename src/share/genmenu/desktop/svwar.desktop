@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Svwar
+Exec=/bin/sh -c "/usr/bin/launch 'sipvicious_svwar' '-h' 'bash -l'"
+Icon=sip-voip
+Type=Application

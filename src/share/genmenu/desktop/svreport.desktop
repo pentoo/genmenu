@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Svreport
+Exec=/bin/sh -c "/usr/bin/launch 'sipvicious_svreport' '-h' 'bash -l'"
+Icon=sip-voip
+Type=Application

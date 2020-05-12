@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Svcrack
+Exec=/bin/sh -c "/usr/bin/launch 'sipvicious_svcrack' '-h' 'bash -l'"
+Icon=sip-voip
+Type=Application

@@ -1,5 +1,6 @@
 [Desktop Entry]
-Name=Inception
-Exec=/bin/sh -c "/usr/bin/launch 'incept' '-h' 'bash -l'"
-Icon=forensics
+Name=Traceroute
+Exec=/bin/sh -c "/usr/bin/launch 'traceroute' '--help' 'bash -l'"
+Icon=analyzer
 Type=Application
+Terminal=true

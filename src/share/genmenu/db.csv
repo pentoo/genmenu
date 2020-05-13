@@ -165,7 +165,7 @@ net-analyzer/thc-ipv6,analyzer thc-ipv6, address6 alive6 covert_send6 covert_sen
 net-analyzer/thc-pptp-bruter,cracker,thc-pptp-bruter
 net-analyzer/thcrut,analyzer,thcrut
 net-analyzer/theHarvester,footprint Mail,theHarvester.py
-net-analyzer/traceroute,analyzer,traceroute
+net-analyzer/traceroute,analyzer,traceroute.desktop
 net-analyzer/ucsniff,sip-voip,ucsniff
 net-analyzer/upnpscan,scanner,upnpscan
 net-analyzer/upnpwn,exploit,upnpwn

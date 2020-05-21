@@ -1,25 +1,12 @@
 app-admin/testdisk,forensics,testdisk
-app-antivirus/malheur,rce,malheur
 app-crypt/SIPcrack,sip-voip,sipcrack sipdump
 app-crypt/asleap,wireless,asleap
 app-crypt/chntpw,cracker,chntpw
-app-crypt/cryptohaze-combined,cracker,cryptohaze-combined
-app-crypt/cuda-rarcrypt,cracker,cuda-rarcrypt
-app-crypt/hashcat-gui,cracker,hashcat-gui.desktop
-app-crypt/hashkill,cracker,hashkill
 app-crypt/johntheripper,cracker,john
-app-crypt/md5bf,cracker,md5bf
-app-crypt/oclhashcat-bin,cracker,oclhashcat
 app-crypt/ophcrack,cracker,ophcrack.desktop
-app-crypt/plaintoo,cracker,plaintoo.desktop
-app-crypt/pyrit,cracker,pyrit
 app-crypt/rcracki_mt,cracker,rcracki_mt
 app-crypt/xor-analyze,forensics,xor-analyze xor-dec xor-enc
-app-exploits/packetstormexploits,exploit,packetstormexploits.desktop
-app-exploits/shellstorm,exploit,shellstorm.py
-app-forensics/autopsy,forensics,autopsy.desktop
 app-forensics/cmospwd,forensics,cmospwd
-app-forensics/dff,forensics,dff.desktop
 app-forensics/foremost,forensics,foremost
 app-forensics/galleta,forensics,galleta
 app-forensics/inception,forensics,inception.desktop
@@ -32,108 +19,59 @@ app-forensics/pdf-parser,forensics PDF,pdf-parser
 app-forensics/pdfid,forensics PDF,pdfid
 app-forensics/rdd,forensics,rdd,--help
 app-forensics/sleuthkit,forensics Sleuthkit,mactime blkcalc blkcat blkls blkstat ffind fls fsstat hfind icat ifind ils img_cat img_stat istat jcat jls mmcat mmls mmstat sigfind sorter srch_strings tsk_comparedir tsk_gettimes tsk_loaddb tsk_recover,--help
-app-forensics/volatility,forensics,volatility
-app-fuzz/Peach,fuzzers,peach
 app-fuzz/bed,fuzzers,bed
-app-fuzz/bss,fuzzers,bss
-app-fuzz/fusil,fuzzers Fusil,fusil-firefox fusil-clamav fusil-imagemagick fusil-gettext fusil-mplayer fusil-zzuf fusil-ogg123 fusil-python fusil-php fusil-vlc fusil-libc-printf fusil-wizzard fusil-poppler fusil-gstreamer
 app-fuzz/fuzzdb,fuzzers,fuzzdb.desktop
-app-fuzz/fuzzer-server,fuzzers,fuzzer-server
 app-fuzz/http-fuzz,fuzzers,http-fuzz
-app-fuzz/ohrwurm,fuzzers,ohrwurm
-app-fuzz/protos,fuzzers,protos
 app-fuzz/scapy,fuzzers,scapy
 app-fuzz/slowhttptest,fuzzers,slowhttptest
 app-fuzz/smtp-fuzz,fuzzers,smtp-fuzz
-app-fuzz/smudge,fuzzers,smudge
-app-fuzz/snmp-fuzzer,fuzzers,snmp-fuzzer
-app-fuzz/taof,fuzzers,taof
 app-misc/hivex,forensics Hivex,hivexget hivexml hivexregedit hivexsh
 app-pda/ideviceinstaller,mobile iDevice,ideviceinstaller
 app-pda/ifuse,mobile,ifuse
 app-pda/libimobiledevice,mobile iDevice,idevicebackup idevicedate ideviceenterrecovery ideviceimagemounter ideviceinfo idevicepair idevicescreenshot idevicesyslog
 app-text/cewl,cracker,cewl,--help
-dev-db/absinthe,database,absinthe
-dev-db/minimysqlator,database MySQL,minimysqlator.desktop
 dev-db/mssqlscan,database MSSQL,mssqlscan
-dev-db/oat,database Oracle,otnsctl.sh oquery.sh osd.sh ose.sh opwg.sh
-dev-db/sqid,database,sqid.rb
-dev-db/sqlbf,database,sqlbf
-dev-db/sqlibf,database,sqlibf
 dev-db/sqlitebrowser,database,sqlitebrowser.desktop
-dev-db/sqlix,database,sqlix
 dev-db/sqlmap,database,sqlmap
-dev-java/jad-bin,rce,jad
 dev-lang/nasm,rce,nasm
 dev-util/apktool,mobile,apktool
 dev-util/dex2jar,mobile,dex2jar.desktop
 dev-util/edb,rce,edb.desktop
-dev-util/emilpro,rce,emilpro
-dev-util/insight,rce,insight
 dev-util/jd-gui-bin,mobile,jd-gui.desktop
 dev-util/ltrace,rce,ltrace
-dev-util/metasm,rce,metasm disassemble metasm-gui.desktop
-dev-util/radare,rce,gradare.desktop
 dev-util/radare2,rce,radare2
-dev-util/skipfish,scanner,skipfish
 dev-util/strace,rce,strace
 media-radio/fldigi,radio,fldigi
-net-analyzer/aimsniff,analyzer,aimsniff
-net-analyzer/amap,footprint Fingerprint Services,amap
-net-analyzer/angst,analyzer,angst
-net-analyzer/arpantispoofer,analyzer,arpantispoofer
-net-analyzer/arpwatch,analyzer,arpwatch
-net-analyzer/authforce,cracker,authforce
 net-analyzer/autoscan-network,scanner,autoscan.desktop
-net-analyzer/bmon,analyzer,bmon
 net-analyzer/chaosreader,analyzer,chaosreader
 net-analyzer/davtest,exploit,davtest.pl
-net-analyzer/dnsa,analyzer,dnsa
-net-analyzer/dnsenum,analyzer,dnsenum
 net-analyzer/dnstracer,analyzer,dnstracer
-net-analyzer/driftnet,analyzer,driftnet.desktop
-net-analyzer/dsniff,mitm Dsniff,dnsspoof filesnarf macof sshow tcpkill tcpnice sshmitm dsniff webspy urlsnarf arpspoof webmitm mailsnarf msgsnarf
 net-analyzer/enum4linux,scanner Windows,enum4linux
-net-analyzer/etherape,analyzer,etherape
 net-analyzer/ettercap,mitm,ettercap.desktop
-net-analyzer/fasttrack,exploit,fasttrack.desktop fasttrack-gui.desktop
 net-analyzer/fierce,footprint DNS,fierce.pl
 net-analyzer/firewalk,scanner,firewalk
 net-analyzer/fragroute,forging,fragroute
 net-analyzer/ftester,analyzer,ftest
 net-analyzer/geoedge,footprint Geolocation,geoedge
 net-analyzer/gnome-nettool,analyzer,gnome-nettool.desktop
-net-analyzer/gspoof,forging,gspoof,-g
-net-analyzer/honeyd,misc,honeyd
 net-analyzer/hping,forging,hping2 hping3
 net-analyzer/hunt,scanner,hunt
 net-analyzer/hydra,cracker,hydra.desktop
 net-analyzer/hyenae,forging,hyenae
 net-analyzer/ike-scan,scanner,ike-scan
-net-analyzer/inguma,exploit,inguma
-net-analyzer/isic,forging,isic
 net-analyzer/macchanger,forging,macchanger
-net-analyzer/maketh,forging,maketh
 net-analyzer/mbrowse,analyzer,mbrowse
 net-analyzer/medusa,cracker,medusa
-net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Http,metagoofil
 net-analyzer/metasploit,exploit,msf-console.desktop armitage.desktop
-net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
-net-analyzer/ncrack,cracker,ncrack
 net-analyzer/nessus,scanner,nessus.desktop
-net-analyzer/netcat6,analyzer,nc6
 net-analyzer/netdiscover,analyzer,netdiscover
-net-analyzer/netdude,analyzer,netdude.desktop
-net-analyzer/netmap,analyzer,netmap
-net-analyzer/netwag,forging,netwag
 net-analyzer/ngrep,analyzer,ngrep
 net-analyzer/nikto,scanner Http,nikto
 net-analyzer/nmap,scanner,nmap,--help
 net-analyzer/nmap,scanner,zenmap-root.desktop
 net-analyzer/nmap,scanner,zenmap.desktop
-net-analyzer/nmapsi,scanner,nmap.desktop
 net-analyzer/nmbscan,scanner Windows,nmbscan
 net-analyzer/ntop,analyzer,ntop.desktop
 net-analyzer/ntp-fingerprint,footprint Fingerprint Services,ntp-fingerprint

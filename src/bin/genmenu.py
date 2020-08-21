@@ -12,7 +12,7 @@ import sys,os,re,shutil,subprocess
 import csv
 
 from lxml import etree
-from StringIO import StringIO
+from io import StringIO
 
 db = []
 
@@ -151,16 +151,16 @@ def appendcsv():
 
 #REM Almost done, need to sanitize tabbed output
 def listdb():
-    print "*****************************************"
-    print "    Listing all supported packages "
-    print "*****************************************"
-    print "Package\t\tMenu category"
+    print("*****************************************")
+    print("    Listing all supported packages ")
+    print("*****************************************")
+    print("Package\t\tMenu category")
     for y in range(db.__len__()):
         if db[y][0].__len__() < 15:
             tab="\t\t"
         else:
             tab="\t"
-        print db[y][0] + tab + db[y][1]
+        print(db[y][0] + tab + db[y][1])
 
 
 def listpackages(pkgdir):
@@ -307,7 +307,7 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
                 menu = base_menu
             else:
                 if options.vverbose:
-                    print submenus
+                    print(submenus)
 
                 menu = find_menu_entry(base_menu, submenus)
                 if menu == None:
@@ -328,7 +328,7 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
             file = os.path.join(APPSDIR, iconfile)
             if os.path.exists(file):
                 if options.verbose:
-                    print arrow + "Copying " + iconfile + " to " + ICONDIR
+                    print(arrow + "Copying " + iconfile + " to " + ICONDIR)
                 if not options.simulate:
                 # Copy the file
                     try:
@@ -346,8 +346,8 @@ def make_menu_entry(root_menu, iconfiles, category, params, genname):
         if not category == 'none':
                 append_desktop_entry(menu, iconfile)
         if options.vverbose:
-            print etree.tostring(root_menu, pretty_print=True)
-            print "debug: " + iconfile + " " + category
+            print(etree.tostring(root_menu, pretty_print=True))
+            print("debug: " + iconfile + " " + category)
 #        if options.xfce:
 #            os.system("echo 'Terminal=true' >>" + ICONDIR + iconfile)
             #os.system("sed -i 's/Exec=\(.*\)/Exec=\\1\; sudo -s\;/' " + ICONDIR + iconfile)
@@ -356,26 +356,26 @@ def genxml(root_menu, configdir):
     '''Generate the applications.menu XMl file in the user's directory.'''
     dtd = etree.DTD(os.path.join(BASEDIR, "lib", "menu-1.0.dtd"))
     if dtd.validate(root_menu) == 0:
-        print dtd.error_log.filter_from_errors()
+        print(dtd.error_log.filter_from_errors())
         return -1
     if options.verbose:
         #menu = etree.parse(root_menu)
-        print etree.tostring(root_menu, pretty_print=True)
+        print(etree.tostring(root_menu, pretty_print=True))
     if not options.simulate:
         if not os.path.exists(configdir):
             os.makedirs(configdir)
     if options.xfce:
         mymenu = open(configdir + '/xfce-applications.menu', "w")
-        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+        mymenu.write(etree.tostring(root_menu, pretty_print=True).decode('utf-8'))
     if options.kde4:
         mymenu = open(configdir + '/kde-4-applications.menu', "w")
-        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+        mymenu.write(etree.tostring(root_menu, pretty_print=True).decode('utf-8'))
     if options.kde:
         mymenu = open(configdir + '/kf5-applications.menu', "w")
-        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+        mymenu.write(etree.tostring(root_menu, pretty_print=True).decode('utf-8'))
     else:
         mymenu = open(configdir + '/applications.menu', "w")
-        mymenu.write(etree.tostring(root_menu, pretty_print=True))
+        mymenu.write(etree.tostring(root_menu, pretty_print=True).decode('utf-8'))
     mymenu.close()
 
 def main():
@@ -391,11 +391,11 @@ def main():
     if options.kde:
         if os.path.exists(ICONDIR):
             wipeXfceIconDir()
-    try:
+    #try:
         readcsv()
-    except:
-        print >> sys.stderr, "cannot read csv file"
-        return -1
+    #except:
+    #    print("cannot read csv file", file=sys.stderr)
+    #    return -1
 
     if options.testmodule:
         a = desktopfile()
@@ -410,11 +410,11 @@ def main():
         return 0
 
     if options.simulate:
-        print star + "Starting simulation"
+        print(star + "Starting simulation")
 
     if options.listonly:
-        print star + "Listing supported packages installed"
-        print "Package\t\tIcon file\t\tMenu category"
+        print(star + "Listing supported packages installed")
+        print("Package\t\tIcon file\t\tMenu category")
 
     if options.extramenu:
         menu = etree.parse(os.path.join(BASEDIR, "lib", "pentoo.menu"))
@@ -438,7 +438,7 @@ def main():
     for y in range(db.__len__()):
         if pkginstalled.__contains__(db[y][0]):
             if options.listonly:
-                print db[y][0] + "\t" + db[y][2] + "\t\t" + db[y][1] + "\t"
+                print(db[y][0] + "\t" + db[y][2] + "\t\t" + db[y][1] + "\t")
             else:
                 # calls makemenuentry file.eap, menu category
                 try:
@@ -452,7 +452,7 @@ def main():
                         genname = ""
                     make_menu_entry(root_menu, db[y][2], db[y][1], params, genname)
                 except:
-                    print >> sys.stderr, "!!! Unable to generate entry for " + db[y][0] + "please report this to https://github.com/pentoo/genmenu/issues"
+                    print("!!! Unable to generate entry for " + db[y][0] + "please report this to https://github.com/pentoo/genmenu/issues", file=sys.stderr)
                     pass
         else:
             notthere.append(db[y][0])
@@ -460,10 +460,10 @@ def main():
     #    settermenv()
     if options.vverbose:
         # Final move, show the unfound icons in the db
-        print warn + "Missing applications :"
-        print star + "The following applications are available but not installed"
+        print(warn + "Missing applications :")
+        print(star + "The following applications are available but not installed")
         for i in range(notthere.__len__()):
-            print arrow + notthere[i]
+            print(arrow + notthere[i])
     #print etree.tostring(root_menu, pretty_print=True)
     if not options.simulate:
 
@@ -504,7 +504,7 @@ def main():
         file = os.path.join(LOCALDIR, directory_entry_file)
 
 	#FUCKME, why is this even needed?
-	if options.xfce:
+        if options.xfce:
         	magic_menu_entry_file = "terminal.desktop"
 	        file = os.path.join(ICONDIR, magic_menu_entry_file)
 	        try:
@@ -516,7 +516,7 @@ def main():
 	            return -1
 
         if HOME != "/root":
-            print "Warning, your user should be in the wheel group or some menus will not work"
+            print("Warning, your user should be in the wheel group or some menus will not work")
         sys.exit()
 
 
@@ -557,5 +557,5 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         # If interrupted, exit nicely
-        print >> sys.stderr, 'Interrupted.'
+        print('Interrupted.', file=sys.stderr)
 

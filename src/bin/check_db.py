@@ -11,14 +11,15 @@ import sys,os,re,shutil,subprocess
 import csv
 
 from lxml import etree
-from StringIO import StringIO
+from io import StringIO
+import subprocess
 
 db = []
 
 # path to the db.csv file
 BASEDIR="../share/genmenu/"
 # path to the pentoo portage
-PENTOODIR="/pentoo/portage/trunk/pentoo/"
+PENTOODIR=subprocess.check_output(['portageq', 'get_repo_path', '/', 'pentoo']).decode('utf-8').replace("\n","/pentoo/")
 
 star = "  *  "
 arrow = " >>> "
@@ -42,16 +43,16 @@ def appendcsv():
     #    DB.append(row)
 
 def listdb():
-    print "*****************************************"
-    print "    Listing all supported packages "
-    print "*****************************************"
-    print "Package\t\tMenu category"
+    print("*****************************************")
+    print("    Listing all supported packages ")
+    print("*****************************************")
+    print("Package\t\tMenu category")
     for y in range(db.__len__()):
         if db[y][0].__len__() < 15:
             tab="\t\t"
         else:
             tab="\t"
-        print db[y][0] + tab + db[y][1]
+        print(db[y][0] + tab + db[y][1])
 
 def readebuild(path):
     '''Reads and parces ebuild file'''
@@ -75,24 +76,24 @@ def listpackages(pkgdir):
 
 packages = []
 categories = [ "analyzer", "bluetooth", "cracking", "database", "exploit",
-               "footprint", "forensics", "forging", "fuzzers", "mitm", "mobile", "proxies",
-               "radio", "rce", "scanner", "voip", "wireless" ]
+        "footprint", "forensics", "forging", "fuzzers", "mitm", "mobile", "proxies",
+        "radio", "rce", "scanner", "voip", "wireless" ]
 
 for category in categories:
     catdir=PENTOODIR+"pentoo-"+category+"/"
     catfiles = os.listdir(catdir)
 
     for catfile in catfiles:
-	if catfile.endswith(".ebuild"):
-	    packages = readebuild(catdir+catfile)
+        if catfile.endswith(".ebuild"):
+            packages = readebuild(catdir+catfile)
 
 #    packages.sort()
     for package in packages:
-      	if package.startswith("#"):
-	    continue
-      	matchObj = re.match( r'.*/(.*)', package)
-	if matchObj:
-	    print package + "," + category + "," + matchObj.group(1)
+        if package.startswith("#"):
+            continue
+        matchObj = re.match( r'.*/(.*)', package)
+        if matchObj:
+            print(package + "," + category + "," + matchObj.group(1))
 
 
 def find_option(submenu, tag):
@@ -131,10 +132,10 @@ def main():
 
 #    listdb()
     listpackages(PENTOODIR)
-    return 0
+    #return 0
 
-    print star + "Listing supported packages installed"
-    print "Package\t\tIcon file\t\tMenu category"
+    print(star + "Listing supported packages installed")
+    print("Package\t\tIcon file\t\tMenu category")
 
     pkginstalled = []
     pkginstalled = listpackages(PENTOODIR)
@@ -145,7 +146,7 @@ def main():
     for y in range(db.__len__()):
         if pkginstalled.__contains__(db[y][0]):
             if 1 == 1:
-                print db[y][0] + "\t" + db[y][2] + "\t\t" + db[y][1] + "\t"
+                print(db[y][0] + "\t" + db[y][2] + "\t\t" + db[y][1] + "\t")
             else:
                 # calls makemenuentry file.eap, menu category
                 try:
@@ -158,16 +159,16 @@ def main():
                         params = "-h"
                         genname = ""
                 except:
-                    print >> sys.stderr, "!!! Unable to generate entry for " + db[y][0] + "please report this to grimmlin@pentoo.ch"
+                    print("!!! Unable to generate entry for " + db[y][0] + "please report this to grimmlin@pentoo.ch", file=sys.stderr)
                     pass
         else:
             notthere.append(db[y][0])
 
     # Final move, show the unfound icons in the db
-    print warn + "Missing applications :"
-    print star + "The following applications are available but not installed"
+    print(warn + "Missing applications :")
+    print(star + "The following applications are available but not installed")
     for i in range(notthere.__len__()):
-        print arrow + notthere[i]
+        print(arrow + notthere[i])
 
     sys.exit()
 
@@ -178,5 +179,5 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         # If interrupted, exit nicely
-        print >> sys.stderr, 'Interrupted.'
+        print('Interrupted.', file=sys.stderr)
 

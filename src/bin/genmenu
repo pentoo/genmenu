@@ -1,4 +1,4 @@
-
+#!/bin/sh
 # EAP_LIBDIR="/usr/lib/genmenu/e17/"
 
 # Finds installed packages and remove version number

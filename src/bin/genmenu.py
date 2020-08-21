@@ -135,7 +135,7 @@ LOCALDIR = HOME + '/.local/share/desktop-directories/'
 def readcsv():
     '''Reads the db from the csv file'''
     try:
-        reader = csv.reader(open(BASEDIR + "db.csv", "rb"))
+        reader = csv.reader(open(BASEDIR + "db.csv", "r"))
     except:
         return -1
     for row in reader:
@@ -278,7 +278,7 @@ def create_desktop_entry(name, category, binname, params, genname):
         de.setExec(options.p2term + ' -e "launch ' + binname + ' ' + params + '"')
     else:
         run_command="whereis -b " + binname + "| awk '{printf $2}' "
-        binfullname=subprocess.check_output(run_command, shell=True)
+        binfullname=subprocess.check_output(run_command, shell=True).decode('utf-8')
         matchObj = re.match( r'.*/sbin/.*', binfullname, re.M|re.I)
         bintail = "bash -l"
         if matchObj:
@@ -391,11 +391,11 @@ def main():
     if options.kde:
         if os.path.exists(ICONDIR):
             wipeXfceIconDir()
-    #try:
+    try:
         readcsv()
-    #except:
-    #    print("cannot read csv file", file=sys.stderr)
-    #    return -1
+    except:
+        print("cannot read csv file", file=sys.stderr)
+        return -1
 
     if options.testmodule:
         a = desktopfile()

@@ -1,4 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 #
 # This code in distributed under GPLv2
 # Copyright Michael Zanetta grimmlin@pentoo.ch

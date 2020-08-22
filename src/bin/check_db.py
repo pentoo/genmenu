@@ -1,9 +1,10 @@
-#!/usr/bin/python
-#
-# This code in distributed under GPLv3
-# Copyright Anton Bolshakov blshkv@pentoo.ch
-#
-# Pre-release 0.0001 alpha
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+__author__ = "Anton Bolshakov"
+__license__ = "GPL-3"
+__email__ = "blshkv@pentoo.ch"
+__version__ = '0.1'
 
 import sys,os,re,shutil,subprocess
 

@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Hashcat GUI
-GenericName=
-Exec=/usr/bin/hashcat-gui
-Icon=cracker
-Type=Application

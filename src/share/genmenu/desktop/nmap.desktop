@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Nmap GUI
-Exec=nmapsi4
-StartupNotify=false
-X-Enlightenment-WaitExit=false
-StartupWMClass=nmapsi4
-Icon=nmap-logo-64
-Type=Application

@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Autopsy
-Exec=P2TERM -e launch sh /usr/share/genmenu/scripts/autopsy
-Icon=forensics
-Type=Application

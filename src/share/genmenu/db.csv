@@ -77,7 +77,7 @@ dev-util/radare,rce,gradare.desktop
 dev-util/radare2,rce,radare2
 dev-util/skipfish,scanner,skipfish
 dev-util/strace,rce,strace
-media-radio/fldigi,radio,fldigi
+media-radio/fldigi,radio,fldigi,--help
 net-analyzer/aimsniff,analyzer,aimsniff
 net-analyzer/amap,footprint Fingerprint Services,amap
 net-analyzer/angst,analyzer,angst

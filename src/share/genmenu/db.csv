@@ -118,7 +118,7 @@ net-analyzer/mbrowse,analyzer,mbrowse
 net-analyzer/medusa,cracker,medusa
 net-analyzer/metacoretex-ng,database,metacoretex-ng.desktop
 net-analyzer/metagoofil,footprint Http,metagoofil
-net-analyzer/metasploit,exploit,msf-console.desktop armitage.desktop
+net-analyzer/metasploit,exploit,msf-console.desktop
 net-analyzer/mosref,exploit,mosref mosref-src.desktop
 net-analyzer/nbtscan,scanner Windows,nbtscan
 net-analyzer/ncrack,cracker,ncrack
